@@ -64,6 +64,14 @@ const ProfileSchema = new Schema({
       }
     }
   ],
+  followers: [
+    {
+      user: {
+        type: Schema.Types.ObjectId,
+        ref: 'users'
+      }
+    }
+  ],
   education: [
     {
       school: {

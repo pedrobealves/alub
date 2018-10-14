@@ -297,4 +297,66 @@ router.delete(
   }
 );
 
+// @route   POST api/profile/follow/:id
+// @desc    Follow post
+// @access  Private
+router.post(
+  '/follow/:id',
+  passport.authenticate('jwt', { session: false }),
+  (req, res) => {
+    Profile.findOne({ _id: req.params.id })
+      .then(profile => {
+        if (
+          profile.followers.filter(follow => follow.user.toString() === req.user.id)
+            .length > 0 || req.user.id == profile.user
+        ) {
+          return res
+            .status(400)
+            .json({ alreadyliked: 'Usuário já segue esse outro usuário ou é o mesmo usuário' });
+        }
+
+        // Add user id to likes array
+        profile.followers.unshift({ user: req.user.id });
+
+        profile.save().then(profile => res.json(profile));
+
+      })
+
+  }
+);
+
+// @route   POST api/posts/unfollow/:id
+// @desc    Unfollow post
+// @access  Private
+router.post(
+  '/unfollow/:id',
+  passport.authenticate('jwt', { session: false }),
+  (req, res) => {
+    Profile.findOne({ _id: req.params.id })
+      .then(profile => {
+        if (
+          profile.followers.filter(follow => follow.user.toString() === req.user.id)
+            .length === 0
+        ) {
+          return res
+            .status(400)
+            .json({ alreadyliked: 'Usuário não segue esse outro usuário' });
+        }
+
+        // Get remove index
+        const removeIndex = profile.followers
+          .map(item => item.user.toString())
+          .indexOf(req.user.id);
+
+        // Splice out of array
+        profile.followers.splice(removeIndex, 1);
+
+        // Save
+        profile.save().then(profile => res.json(profile));
+
+      })
+
+  }
+);
+
 module.exports = router;
