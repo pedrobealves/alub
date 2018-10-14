@@ -37,3 +37,7 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
+
+#logo {
+  height: 2em;
+}
