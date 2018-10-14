@@ -17,7 +17,7 @@ class Education extends Component {
         <td>
           <Moment format="YYYY/MM/DD">{edu.from}</Moment> -
           {edu.to === null ? (
-            ' Now'
+            ' Atual'
           ) : (
             <Moment format="YYYY/MM/DD">{edu.to}</Moment>
           )}
@@ -27,20 +27,20 @@ class Education extends Component {
             onClick={this.onDeleteClick.bind(this, edu._id)}
             className="btn btn-danger"
           >
-            Delete
+            Deletar
           </button>
         </td>
       </tr>
     ));
     return (
       <div>
-        <h4 className="mb-4">Education Credentials</h4>
+        <h4 className="mb-4">Educação</h4>
         <table className="table">
           <thead>
             <tr>
-              <th>School</th>
-              <th>Degree</th>
-              <th>Years</th>
+              <th>Nome</th>
+              <th>Periodo</th>
+              <th>Ano</th>
               <th />
             </tr>
             {education}

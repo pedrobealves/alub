@@ -21,7 +21,7 @@ class Landing extends Component {
                 <p className="lead">
                   {' '}
                   Crie um perfil, compartilhe postagens e ajude
-                  outros estudantes
+                  outras pessoas
                 </p>
                 <hr />
                 <Link to="/register" className="btn btn-lg btn-info mr-2">

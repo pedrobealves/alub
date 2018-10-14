@@ -10,19 +10,19 @@ module.exports = function validateExperienceInput(data) {
   data.from = !isEmpty(data.from) ? data.from : '';
 
   if (Validator.isEmpty(data.school)) {
-    errors.school = 'School field is required';
+    errors.school = 'Insira a escola';
   }
 
   if (Validator.isEmpty(data.degree)) {
-    errors.degree = 'Degree field is required';
+    errors.degree = 'Qual o periodo?';
   }
 
   if (Validator.isEmpty(data.fieldofstudy)) {
-    errors.fieldofstudy = 'Field of study field is required';
+    errors.fieldofstudy = 'Qual o local?';
   }
 
   if (Validator.isEmpty(data.from)) {
-    errors.from = 'From date field is required';
+    errors.from = 'Quando foi a data de início?';
   }
 
   return {

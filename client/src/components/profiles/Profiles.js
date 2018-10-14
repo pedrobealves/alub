@@ -22,7 +22,7 @@ class Profiles extends Component {
           <ProfileItem key={profile._id} profile={profile} />
         ));
       } else {
-        profileItems = <h4>No profiles found...</h4>;
+        profileItems = <h4>Não foram encontrados perfis...</h4>;
       }
     }
 
@@ -31,9 +31,9 @@ class Profiles extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4 text-center">Developer Profiles</h1>
+              <h1 className="display-4 text-center">Perfis Alub</h1>
               <p className="lead text-center">
-                Browse and connect with developers
+                Navegue e conecte-se com outras pessoas
               </p>
               {profileItems}
             </div>

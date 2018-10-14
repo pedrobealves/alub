@@ -31,7 +31,7 @@ router.get(
       .populate('user', ['name', 'avatar'])
       .then(profile => {
         if (!profile) {
-          errors.noprofile = 'There is no profile for this user';
+          errors.noprofile = 'Ainda não existe perfil para esse usuário';
           return res.status(404).json(errors);
         }
         res.json(profile);
@@ -50,13 +50,13 @@ router.get('/all', (req, res) => {
     .populate('user', ['name', 'avatar'])
     .then(profiles => {
       if (!profiles) {
-        errors.noprofile = 'There are no profiles';
+        errors.noprofile = 'Não há perfil';
         return res.status(404).json(errors);
       }
 
       res.json(profiles);
     })
-    .catch(err => res.status(404).json({ profile: 'There are no profiles' }));
+    .catch(err => res.status(404).json({ profile: 'Não há perfil' }));
 });
 
 // @route   GET api/profile/handle/:handle
@@ -70,7 +70,7 @@ router.get('/handle/:handle', (req, res) => {
     .populate('user', ['name', 'avatar'])
     .then(profile => {
       if (!profile) {
-        errors.noprofile = 'There is no profile for this user';
+        errors.noprofile = 'Ainda não existe perfil para esse usuário';
         res.status(404).json(errors);
       }
 
@@ -90,14 +90,14 @@ router.get('/user/:user_id', (req, res) => {
     .populate('user', ['name', 'avatar'])
     .then(profile => {
       if (!profile) {
-        errors.noprofile = 'There is no profile for this user';
+        errors.noprofile = 'Ainda não existe perfil para esse usuário';
         res.status(404).json(errors);
       }
 
       res.json(profile);
     })
     .catch(err =>
-      res.status(404).json({ profile: 'There is no profile for this user' })
+      res.status(404).json({ profile: 'Ainda não existe perfil para esse usuário' })
     );
 });
 
@@ -154,8 +154,8 @@ router.post(
         // Check if handle exists
         Profile.findOne({ handle: profileFields.handle }).then(profile => {
           if (profile) {
-            errors.handle = 'That handle already exists';
-            res.status(400).json(errors);
+            errors.handle = 'Esse nome de usuário já esta sendo usado';
+            return res.status(400).json(errors);
           }
 
           // Save Profile

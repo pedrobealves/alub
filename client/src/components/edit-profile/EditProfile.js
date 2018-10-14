@@ -177,15 +177,12 @@ class CreateProfile extends Component {
 
     // Select options for status
     const options = [
-      { label: '* Select Professional Status', value: 0 },
-      { label: 'Developer', value: 'Developer' },
-      { label: 'Junior Developer', value: 'Junior Developer' },
-      { label: 'Senior Developer', value: 'Senior Developer' },
-      { label: 'Manager', value: 'Manager' },
-      { label: 'Student or Learning', value: 'Student or Learning' },
-      { label: 'Instructor or Teacher', value: 'Instructor or Teacher' },
-      { label: 'Intern', value: 'Intern' },
-      { label: 'Other', value: 'Other' }
+      { label: '* Selecione sua ocupação', value: 0 },
+      { label: 'Desenvolvedor', value: 'Desenvolvedor' },
+      { label: 'Estudante ou Aprendiz', value: 'Estudante ou Aprendiz' },
+      { label: 'Instrutor ou Professor', value: 'Instrutor ou Professor' },
+      { label: 'Interno', value: 'Interno' },
+      { label: 'Outro', value: 'Outro' }
     ];
 
     return (
@@ -194,18 +191,19 @@ class CreateProfile extends Component {
           <div className="row">
             <div className="col-md-8 m-auto">
               <Link to="/dashboard" className="btn btn-light">
-                Go Back
+                Voltar
               </Link>
-              <h1 className="display-4 text-center">Edit Profile</h1>
-              <small className="d-block pb-3">* = required fields</small>
+              <h1 className="display-4 text-center">Editar Perfil</h1>
+              <small className="d-block pb-3">* = itens obrigatórios</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* Profile Handle"
+                  placeholder="* Nome de Perfil"
                   name="handle"
                   value={this.state.handle}
                   onChange={this.onChange}
                   error={errors.handle}
-                  info="A unique handle for your profile URL. Your full name, company name, nickname"
+                  info="Um identificador exclusivo para o URL do seu perfil. Seu nome completo, nome da empresa, apelido"
+                  disabled
                 />
                 <SelectListGroup
                   placeholder="Status"
@@ -214,15 +212,15 @@ class CreateProfile extends Component {
                   onChange={this.onChange}
                   options={options}
                   error={errors.status}
-                  info="Give us an idea of where you are at in your career"
+                  info="Nos dê uma ideia em que nível você está"
                 />
                 <TextFieldGroup
-                  placeholder="Company"
+                  placeholder="Companhia"
                   name="company"
                   value={this.state.company}
                   onChange={this.onChange}
                   error={errors.company}
-                  info="Could be your own company or one you work for"
+                  info="Poderia ser sua própria empresa ou para que trabalha"
                 />
                 <TextFieldGroup
                   placeholder="Website"
@@ -230,40 +228,40 @@ class CreateProfile extends Component {
                   value={this.state.website}
                   onChange={this.onChange}
                   error={errors.website}
-                  info="Could be your own website or a company one"
+                  info="Poderia ser seu próprio site ou de uma empresa"
                 />
                 <TextFieldGroup
-                  placeholder="Location"
+                  placeholder="Localização"
                   name="location"
                   value={this.state.location}
                   onChange={this.onChange}
                   error={errors.location}
-                  info="City or city & state suggested (eg. Boston, MA)"
+                  info="Cidade ou cidade e estado, (ex. Cornélio Procópio, PR)"
                 />
                 <TextFieldGroup
-                  placeholder="* Skills"
+                  placeholder="* Habilidades"
                   name="skills"
                   value={this.state.skills}
                   onChange={this.onChange}
                   error={errors.skills}
-                  info="Please use comma separated values (eg.
-                    HTML,CSS,JavaScript,PHP"
+                  info="Por favor, use valores separados por vírgula 
+                  (por exemplo, Photoshop, CSS, JavaScript"
                 />
                 <TextFieldGroup
-                  placeholder="Github Username"
+                  placeholder="Github"
                   name="githubusername"
                   value={this.state.githubusername}
                   onChange={this.onChange}
                   error={errors.githubusername}
-                  info="If you want your latest repos and a Github link, include your username"
+                  info="Se você quiser seus repositórios mais recentes amostra e um link do Github, inclua seu nome de usuário"
                 />
                 <TextAreaFieldGroup
-                  placeholder="Short Bio"
+                  placeholder="Biografia"
                   name="bio"
                   value={this.state.bio}
                   onChange={this.onChange}
                   error={errors.bio}
-                  info="Tell us a little about yourself"
+                  info="Conte-nos um pouco sobre você"
                 />
 
                 <div className="mb-3">
@@ -276,14 +274,14 @@ class CreateProfile extends Component {
                     }}
                     className="btn btn-light"
                   >
-                    Add Social Network Links
+                    Adicionar Redes Sociais
                   </button>
                   <span className="text-muted">Optional</span>
                 </div>
                 {socialInputs}
                 <input
                   type="submit"
-                  value="Submit"
+                  value="Editar"
                   className="btn btn-info btn-block mt-4"
                 />
               </form>

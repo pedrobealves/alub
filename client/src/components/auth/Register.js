@@ -57,9 +57,9 @@ class Register extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Sign Up</h1>
+              <h1 className="display-4 text-center">Inscreva-se</h1>
               <p className="lead text-center">
-                Create your DevConnector account
+                Criar sua conta do Alub 
               </p>
               <form noValidate onSubmit={this.onSubmit}>
                 <TextFieldGroup
@@ -76,7 +76,7 @@ class Register extends Component {
                   value={this.state.email}
                   onChange={this.onChange}
                   error={errors.email}
-                  info="This site uses Gravatar so if you want a profile image, use a Gravatar email"
+                  info="Este site utiliza o Gravatar, se quiser uma imagem de perfil, use um email do Gravatar"
                 />
                 <TextFieldGroup
                   placeholder="Password"

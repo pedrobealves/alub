@@ -56,13 +56,13 @@ class Login extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Log In</h1>
+              <h1 className="display-4 text-center">Login</h1>
               <p className="lead text-center">
-                Sign in to your DevConnector account
+                Prosseguir no Alub
               </p>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="Email Address"
+                  placeholder="E-mail"
                   name="email"
                   type="email"
                   value={this.state.email}
@@ -71,7 +71,7 @@ class Login extends Component {
                 />
 
                 <TextFieldGroup
-                  placeholder="Password"
+                  placeholder="Senha"
                   name="password"
                   type="password"
                   value={this.state.password}

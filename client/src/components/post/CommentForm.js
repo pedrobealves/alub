@@ -49,13 +49,13 @@ class CommentForm extends Component {
       <div className="post-form mb-3">
         <div className="card card-info">
           <div className="card-header bg-info text-white">
-            Make a comment...
+            Faça um comentário...
           </div>
           <div className="card-body">
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
                 <TextAreaFieldGroup
-                  placeholder="Reply to post"
+                  placeholder="Responder a publicação"
                   name="text"
                   value={this.state.text}
                   onChange={this.onChange}
@@ -63,7 +63,7 @@ class CommentForm extends Component {
                 />
               </div>
               <button type="submit" className="btn btn-dark">
-                Submit
+                Publicar
               </button>
             </form>
           </div>

@@ -68,36 +68,36 @@ class AddEducation extends Component {
           <div className="row">
             <div className="col-md-8 m-auto">
               <Link to="/dashboard" className="btn btn-light">
-                Go Back
+                Voltar
               </Link>
-              <h1 className="display-4 text-center">Add Education</h1>
+              <h1 className="display-4 text-center">Adicionar Educação</h1>
               <p className="lead text-center">
-                Add any school, bootcamp, etc that you have attended
+                Adicione qualquer escola, mini-curso, palestra que você tenha assistido, etc
               </p>
               <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* School"
+                  placeholder="* Nome"
                   name="school"
                   value={this.state.school}
                   onChange={this.onChange}
                   error={errors.school}
                 />
                 <TextFieldGroup
-                  placeholder="* Degree or Certification"
+                  placeholder="* Periodo ou Ano"
                   name="degree"
                   value={this.state.degree}
                   onChange={this.onChange}
                   error={errors.degree}
                 />
                 <TextFieldGroup
-                  placeholder="* Field of Study"
+                  placeholder="* Local"
                   name="fieldofstudy"
                   value={this.state.fieldofstudy}
                   onChange={this.onChange}
                   error={errors.fieldofstudy}
                 />
-                <h6>From Date</h6>
+                <h6>Data de Início</h6>
                 <TextFieldGroup
                   name="from"
                   type="date"
@@ -105,7 +105,7 @@ class AddEducation extends Component {
                   onChange={this.onChange}
                   error={errors.from}
                 />
-                <h6>To Date</h6>
+                <h6>Data Conclusão</h6>
                 <TextFieldGroup
                   name="to"
                   type="date"
@@ -125,20 +125,20 @@ class AddEducation extends Component {
                     id="current"
                   />
                   <label htmlFor="current" className="form-check-label">
-                    Current Job
+                    Atual
                   </label>
                 </div>
                 <TextAreaFieldGroup
-                  placeholder="Program Description"
+                  placeholder="Descrição"
                   name="description"
                   value={this.state.description}
                   onChange={this.onChange}
                   error={errors.description}
-                  info="Tell us about the program that you were in"
+                  info="Conte-nos sobre o programa em que você esteve"
                 />
                 <input
                   type="submit"
-                  value="Submit"
+                  value="Adicionar"
                   className="btn btn-info btn-block mt-4"
                 />
               </form>

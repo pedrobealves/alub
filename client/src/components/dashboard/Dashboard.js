@@ -41,7 +41,7 @@ class Dashboard extends Component {
               onClick={this.onDeleteClick.bind(this)}
               className="btn btn-danger"
             >
-              Delete My Account
+              Deletar Minha Conta
             </button>
           </div>
         );
@@ -49,10 +49,10 @@ class Dashboard extends Component {
         // User is logged in but has no profile
         dashboardContent = (
           <div>
-            <p className="lead text-muted">Welcome {user.name}</p>
-            <p>You have not yet setup a profile, please add some info</p>
+            <p className="lead text-muted">Bem-vindo {user.name}</p>
+            <p>Você ainda não criou um perfil, por favor, adicione algumas informações</p>
             <Link to="/create-profile" className="btn btn-lg btn-info">
-              Create Profile
+              Criar Perfil
             </Link>
           </div>
         );
@@ -64,7 +64,7 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
+              <h1 className="display-4">Minha Conta</h1>
               {dashboardContent}
             </div>
           </div>
