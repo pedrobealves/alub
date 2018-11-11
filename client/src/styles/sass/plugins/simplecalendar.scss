@@ -1,0 +1,388 @@
+*[class*="fontawesome-"]:before {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+}
+
+.calendar-container {
+    position: relative;
+    width: 100%;
+}
+
+.calendar .card {
+    border-bottom: 1px solid #e6ecf5;
+}
+
+.calendar .list {
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.calendar .place {
+    font-size: 11px;
+    padding: 0 25px 25px;
+}
+
+.calendar .more-dropdown {
+    right: auto;
+    left: 0;
+}
+
+
+.calendar .more-dropdown a {
+    font-size: 12px;
+}
+
+.calendar .more-dropdown a:hover {
+     color: #08ddc1;
+}
+
+.calendar .card-header svg {
+    float: none;
+    margin-left: 10px;
+}
+
+.calendar .friends-harmonic {
+    padding: 0 25px 25px;
+}
+
+.calendar .place svg {
+    margin-right: 10px;
+    fill: #c6c9db;
+}
+
+.calendar .card:last-child {
+    border-bottom: none;
+}
+
+.calendar-container table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.calendar .card-header a {
+    font-size: 13px;
+}
+
+.calendar .card-header {
+    padding: 25px;
+}
+
+.calendar .card-body {
+    padding: 0 25px 25px;
+}
+
+.calendar .card-header {
+    border-bottom: none;
+}
+
+.calendar header {
+    position: relative;
+    padding: 25px;
+    border-bottom: 1px solid #e6ecf5;
+}
+
+.calendar .month {
+    margin-bottom: 0;
+}
+
+.calendar thead {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 9px;
+    color: #888da8;
+}
+
+.calendar tbody {
+    color: #4b4e65;
+    font-size: 11px;
+}
+
+.calendar td {
+    border: 2px solid transparent;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.current-day {
+    color: #08ddc1;
+}
+
+.event {
+    cursor: pointer;
+    position: relative;
+}
+
+.event:after,
+.event:before {
+    border-radius: 50%;
+    display: inline-block;
+    content: '';
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    bottom: 0;
+}
+
+.event-complited:after {
+    background-color: #08ddc1;
+    right: 50%;
+    margin-right: -2px;
+}
+
+.event-uncomplited:before {
+    background-color: #9a9fbf;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.event-complited.event-uncomplited:after {
+    right: 7px;
+    margin-right: 0;
+}
+
+.event-uncomplited.event-complited:before {
+    left: 7px;
+    margin-left: 0;
+}
+
+.event-complited-2:after,
+.event-complited-2:before {
+    background-color: #08ddc1;
+}
+
+.event-complited-2:after {
+    right: 7px;
+    margin-right: 0;
+}
+
+.event-complited-2:before {
+    left: 7px;
+    margin-left: 0;
+}
+
+.event-uncomplited-2:after,
+.event-uncomplited-2:before {
+    background-color: #9a9fbf;
+}
+
+.event-uncomplited-2:after {
+    right: 7px;
+    margin-right: 0;
+}
+
+.event-uncomplited-2:before {
+    left: 7px;
+    margin-left: 0;
+}
+
+.calendar-btn-prev,
+.calendar-btn-next {
+	color: #d7d9e5;
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+    width: 16px;
+}
+
+.calendar-btn-prev {
+    left: 30px;
+}
+
+.calendar-btn-next {
+    right: 35px;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.close {
+    color: #A4AAAB;
+    margin-top: -15px;
+    margin-right: 10px;
+    float: right;
+}
+
+.day-event {
+    width: 100%;
+    padding-bottom: 0px;
+    display:none;
+    border-top: 1px solid #e6ecf5;
+    text-align: left;
+}
+
+.day-event p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.day-event span{
+    font-size: 12px;
+}
+
+.day-event button {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #c0392b;
+    border: 0;
+    border-bottom: 2px solid #b53224;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #b53224;
+    box-shadow: inset 0 -2px #b53224;
+}
+
+.check-btn {
+    width: 100%;
+}
+input[type=checkbox] {display:none;}
+
+.print-btn {
+    padding: 1px 14px 5px 14px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+
+[class*="fontawesome-"]::before {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+}
+.fontawesome-remove::before {
+    content: "\f00d";
+}
+
+.fontawesome-angle-left::before {
+    content: "\f104";
+}
+
+.fontawesome-angle-right::before {
+    content: "\f105";
+}
+
+.event-time {
+    margin-bottom: 20px;
+}
+
+.event-time .circle {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #34eccd;
+    border-radius: 100%;
+    margin-right: 7px;
+    display: inline-block;
+}
+
+.event-time time {
+    font-size: 10px;
+    color: #515365;
+    font-weight: bold;
+}
+
+.event-time .more svg {
+    float: none;
+    color: #d7d9e5;
+    margin-left: 5px;
+}
+
+.event-time .more {
+    display: inline-block;
+}
+
+.check-all {
+    padding: 20px;
+    background-color: #08ddc1;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}

@@ -14,13 +14,13 @@ const TextFieldGroup = ({
   disabled
 }) => {
   return (
-    <div className="form-group">
+    <React.Fragment>
+      <label className="control-label">{placeholder}</label>
       <input
         type={type}
         className={classnames('form-control form-control-lg', {
           'is-invalid': error
         })}
-        placeholder={placeholder}
         name={name}
         value={value}
         onChange={onChange}
@@ -28,7 +28,7 @@ const TextFieldGroup = ({
       />
       {info && <small className="form-text text-muted">{info}</small>}
       {error && <div className="invalid-feedback">{error}</div>}
-    </div>
+    </React.Fragment>
   );
 };
 
