@@ -1,6 +1,4 @@
 import React from 'react';
-import TextFieldGroup from '../../common/TextFieldGroup';
-import TextAreaFieldGroup from '../../common/TextAreaFieldGroup';
 import './about.scss'
 
 

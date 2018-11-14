@@ -217,7 +217,7 @@ class Navbar extends Component {
               </div>
             </form>
 
-            <a href="#" className="link-find-friend">Find Friends</a>
+            <Link to="/profiles" className="link-find-friend">Explorar</Link>
 
             <div className="control-block">
 
@@ -228,7 +228,7 @@ class Navbar extends Component {
                 <div className="more-dropdown more-with-triangle triangle-top-center">
                   <div className="ui-block-title ui-block-title-small">
                     <h6 className="title">FRIEND REQUESTS</h6>
-                    <a href="#">Find Friends</a>
+                    <Link to="/profiles">Explorar</Link>
                     <a href="#">Settings</a>
                   </div>
 
@@ -604,7 +604,7 @@ class Navbar extends Component {
               <div className="mCustomScrollbar" data-mcs-theme="dark">
                 <div className="ui-block-title ui-block-title-small">
                   <h6 className="title">FRIEND REQUESTS</h6>
-                  <a href="#">Find Friends</a>
+                  <Link to="/profiles">Explorar</Link>
                   <a href="#">Settings</a>
                 </div>
                 <ul className="notification-list friend-requests">
