@@ -25,6 +25,7 @@ import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
+import Upload from './components/profile/edit/Upload';
 
 require('moment/locale/pt-br.js');
 
@@ -69,6 +70,13 @@ class App extends Component {
                   exact
                   path="/create-profile"
                   component={CreateProfile}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/upload"
+                  component={Upload}
                 />
               </Switch>
               <Switch>

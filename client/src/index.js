@@ -4,7 +4,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/sass/main.scss'
 import './styles/sass/fonts.scss'
-import './styles/sass/custom.scss'
+import './styles/custom.scss'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
