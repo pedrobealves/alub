@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { registerUser } from '../../actions/authActions';
 import TextFieldGroup from '../common/TextFieldGroup';
+import Landing from '../layout/Landing'
 
 class Register extends Component {
   constructor() {
@@ -54,8 +55,9 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
+      <Landing>
       <div className="tab-pane" id="home" role="tabpanel" data-mh="log-tab">
-        <div className="title h6">Register to Olympus</div>
+        <div className="title h6">Registrar no alub</div>
         <form noValidate onSubmit={this.onSubmit} className="content">
           <div className="row">
             <div className="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -106,6 +108,7 @@ class Register extends Component {
           </div>
         </form>
       </div>
+      </Landing>
     );
   }
 }

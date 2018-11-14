@@ -14,71 +14,71 @@ class SidebarRight extends Component {
                             <ul className="chat-users">
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar67-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar67-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar62-sm.jpg" className="avatar" />
-                                        <span className="icon-status online"></span>
-                                    </div>
-                                </li>
-
-                                <li className="inline-items js-chat-open">
-                                    <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar68-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar62-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
 
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar69-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar68-sm.jpg" className="avatar" />
+                                        <span className="icon-status online"></span>
+                                    </div>
+                                </li>
+
+                                <li className="inline-items js-chat-open">
+                                    <div className="author-thumb">
+                                        <img alt="author" src="/assets/img/avatar69-sm.jpg" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
                                 </li>
 
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar70-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar70-sm.jpg" className="avatar" />
                                         <span className="icon-status disconected"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar64-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar64-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar71-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar71-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar72-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar72-sm.jpg" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar63-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar63-sm.jpg" className="avatar" />
                                         <span className="icon-status status-invisible"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar72-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar72-sm.jpg" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar71-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar71-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
@@ -87,12 +87,12 @@ class SidebarRight extends Component {
 
                         <div className="search-friend inline-items">
                             <a href="#" className="js-sidebar-open">
-                                <svg className="olymp-menu-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-menu-icon"></use></svg>
+                                <svg className="olymp-menu-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-menu-icon"></use></svg>
                             </a>
                         </div>
 
                         <a href="#" className="olympus-chat inline-items js-chat-open">
-                            <svg className="olymp-chat---messages-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                            <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
                         </a>
 
                     </div>
@@ -110,7 +110,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar67-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar67-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
 
@@ -119,19 +119,19 @@ class SidebarRight extends Component {
                                         <span className="status">ONLINE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -141,7 +141,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar62-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar62-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
 
@@ -150,19 +150,19 @@ class SidebarRight extends Component {
                                         <span className="status">AT WORK!</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -174,7 +174,7 @@ class SidebarRight extends Component {
 
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar68-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar68-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
 
@@ -183,19 +183,19 @@ class SidebarRight extends Component {
                                         <span className="status">ONLINE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -208,7 +208,7 @@ class SidebarRight extends Component {
 
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar69-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar69-sm.jpg" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
 
@@ -217,19 +217,19 @@ class SidebarRight extends Component {
                                         <span className="status">AWAY</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -242,7 +242,7 @@ class SidebarRight extends Component {
 
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar70-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar70-sm.jpg" className="avatar" />
                                         <span className="icon-status disconected"></span>
                                     </div>
 
@@ -251,19 +251,19 @@ class SidebarRight extends Component {
                                         <span className="status">OFFLINE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -283,7 +283,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar64-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar64-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
 
@@ -292,19 +292,19 @@ class SidebarRight extends Component {
                                         <span className="status">ONLINE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -322,7 +322,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar71-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar71-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
 
@@ -331,19 +331,19 @@ class SidebarRight extends Component {
                                         <span className="status">ONLINE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -354,7 +354,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar72-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar72-sm.jpg" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
 
@@ -363,19 +363,19 @@ class SidebarRight extends Component {
                                         <span className="status">AWAY</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -385,7 +385,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar63-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar63-sm.jpg" className="avatar" />
                                         <span className="icon-status status-invisible"></span>
                                     </div>
 
@@ -394,19 +394,19 @@ class SidebarRight extends Component {
                                         <span className="status">INVISIBLE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -415,7 +415,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar72-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar72-sm.jpg" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
 
@@ -424,19 +424,19 @@ class SidebarRight extends Component {
                                         <span className="status">AWAY</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -445,7 +445,7 @@ class SidebarRight extends Component {
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="./assets/img/avatar71-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/avatar71-sm.jpg" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
 
@@ -454,19 +454,19 @@ class SidebarRight extends Component {
                                         <span className="status">ONLINE</span>
                                     </div>
 
-                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <div className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
 
                                         <ul className="more-icons">
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="START CONVERSATION" className="olymp-comments-post-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="ADD TO CONVERSATION" className="olymp-add-to-conversation-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon"></use></svg>
                                             </li>
 
                                             <li>
-                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
+                                                <svg data-toggle="tooltip" data-placement="top" data-original-title="BLOCK FROM CHAT" className="olymp-block-from-chat-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon"></use></svg>
                                             </li>
                                         </ul>
 
@@ -478,22 +478,22 @@ class SidebarRight extends Component {
 
                         <div className="search-friend inline-items">
                             <form className="form-group" >
-                                <input className="form-control" placeholder="Search Friends..." value="" type="text" />
+                                <input className="form-control" placeholder="Search Friends..." type="text" />
                             </form>
 
                             <a href="29-YourAccount-AccountSettings.html" className="settings">
-                                <svg className="olymp-settings-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-settings-icon"></use></svg>
+                                <svg className="olymp-settings-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-settings-icon"></use></svg>
                             </a>
 
                             <a href="#" className="js-sidebar-open">
-                                <svg className="olymp-close-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
+                                <svg className="olymp-close-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
                             </a>
                         </div>
 
                         <a href="#" className="olympus-chat inline-items js-chat-open">
 
                             <h6 className="olympus-chat-title">OLYMPUS CHAT</h6>
-                            <svg className="olymp-chat---messages-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                            <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
                         </a>
 
                     </div>
@@ -509,7 +509,7 @@ Fixed Sidebar Right-Responsive */}
                     <div className="fixed-sidebar-right sidebar--small" id="sidebar-right-responsive">
 
                         <a href="#" className="olympus-chat inline-items js-chat-open">
-                            <svg className="olymp-chat---messages-icon"><use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                            <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
                         </a>
 
                     </div>

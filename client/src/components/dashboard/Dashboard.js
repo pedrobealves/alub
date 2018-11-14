@@ -30,8 +30,8 @@ class Dashboard extends Component {
       if (Object.keys(profile).length > 0) {
         dashboardContent = (
           <div>
-            <p className="lead text-muted">
-              Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
+            <p className="lead">
+              Welcome <Link to={`/profile/${profile.handle}`} className="text-white">{user.name}</Link>
             </p>
             <ProfileActions />
             <Experience experience={profile.experience} />
@@ -49,9 +49,9 @@ class Dashboard extends Component {
         // User is logged in but has no profile
         dashboardContent = (
           <div>
-            <p className="lead text-muted">Bem-vindo {user.name}</p>
+            <p className="lead">Bem-vindo <span class="font-weight-bold">{user.name}</span></p>
             <p>Você ainda não criou um perfil, por favor, adicione algumas informações</p>
-            <Link to="/create-profile" className="btn btn-lg btn-info">
+            <Link to="/create-profile" className="btn btn-md btn-border c-white m-5">
               Criar Perfil
             </Link>
           </div>
@@ -60,16 +60,19 @@ class Dashboard extends Component {
     }
 
     return (
-      <div className="dashboard">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1 className="display-4">Minha Conta</h1>
-              {dashboardContent}
+      <div class="main-header">
+      <div class="content-bg-wrap bg-account"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-8 m-auto col-md-8 col-sm-12 col-12">
+            <div class="main-header-content">
+              <h1> Minha Conta</h1>
+              <p>{dashboardContent}</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
     );
   }
 }

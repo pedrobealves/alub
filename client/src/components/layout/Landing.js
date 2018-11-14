@@ -5,35 +5,47 @@ import { connect } from 'react-redux';
 
 class Landing extends Component {
   componentDidMount() {
-    if (this.props.auth.isAuthenticated) {
+    if (this.props.auth.isAuthenticated && !this.props.children) {
       this.props.history.push('/dashboard');
     }
   }
 
   render() {
-    const bck = (
-      <div className="landing">
-        <div className="dark-overlay landing-inner text-light">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">alub</h1>
-                <p className="lead">
-                  {' '}
-                  Crie um perfil, compartilhe postagens e ajude
-                  outras pessoas!!!
-                </p>
-                <hr />
-                <Link to="/register" className="btn btn-lg btn-info mr-2">
-                  Inscreva-se
+    const children = this.props.children;
+
+    const lead = (
+      <div className="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 mx-auto">
+        <div className="content">
+          <Link to="/register" className="btn btn-lg bg-facebook full-width btn-icon-left">
+            Inscreva-se
                 </Link>
-                <Link to="/login" className="btn btn-lg btn-light">
-                  Entrar
+          <Link to="/login" className="btn btn-lg bg-twitter full-width btn-icon-left">
+            Entrar
                 </Link>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
+    )
+
+    const form = (
+      <div class="col col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+
+
+        <div class="registration-login-form">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <Link class="nav-link active" to="/login">
+                <svg class="olymp-login-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-login-icon"></use></svg>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link active" to="/register">
+                <svg class="olymp-register-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-register-icon"></use></svg>
+              </Link>
+            </li>
+          </ul>
+          {children}
+        </div>
+
       </div>
     )
 
@@ -42,35 +54,22 @@ class Landing extends Component {
 
         <div className="content-bg-wrap"></div>
 
-
-
         <div className="header-spacer--standard"></div>
 
         <div className="container">
           <div className="row display-flex">
             <div className="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
               <div className="landing-content">
-                <h1>Welcome to the Biggest Social Network in the World</h1>
-                <p>We are the best and biggest social network with 5 billion active users all around the world. Share you
-                  thoughts, write blog posts, show your favourite music via Stopify, earn badges and much more!
+                <h1>Bem-vindo ao alub</h1>
+                <p> Crie um perfil, compartilhe postagens e ajude
+                  outras pessoas!
 				</p>
-                <a href="#" className="btn btn-md btn-border c-white">Register Now!</a>
+                <a href="#" className="btn btn-md btn-border c-white">Sobre</a>
               </div>
             </div>
 
-            <div className="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 mx-auto">
-                
+            {children ? form : lead}
 
-                
-                  <div className="content">
-                  
-              <a href="#" className="btn btn-lg bg-facebook full-width btn-icon-left"><i className="fab fa-facebook-f" aria-hidden="true"></i>Login with Facebook</a>
-
-<a href="#" className="btn btn-lg bg-twitter full-width btn-icon-left"><i className="fab fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
-
-              </div>
-
-            </div>
           </div>
         </div>
       </div>
