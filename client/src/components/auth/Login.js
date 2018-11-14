@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authActions';
 import TextFieldGroup from '../common/TextFieldGroup';
+import Landing from '../layout/Landing'
 
 class Login extends Component {
   constructor() {
@@ -52,38 +53,59 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="login">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Login</h1>
-              <p className="lead text-center">
-                Prosseguir no Alub
-              </p>
-              <form onSubmit={this.onSubmit}>
-                <TextFieldGroup
-                  placeholder="E-mail"
-                  name="email"
-                  type="email"
-                  value={this.state.email}
-                  onChange={this.onChange}
-                  error={errors.email}
-                />
+      <Landing>
+        <div className="tab-pane active" id="profile" role="tabpanel" data-mh="log-tab">
+          <div className="title h6">Logar em sua Conta</div>
+          <form onSubmit={this.onSubmit} className="content">
+            <div className="row">
+              <div className="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="form-group label-floating is-empty">
+                  <TextFieldGroup
+                    placeholder="Seu E-mail"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    error={errors.email}
+                  />
+                </div>
+                <div className="form-group label-floating is-empty">
+                  <TextFieldGroup
+                    placeholder="Sua Senha"
+                    name="password"
+                    type="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                    error={errors.password}
+                  />
+                </div>
 
-                <TextFieldGroup
-                  placeholder="Senha"
-                  name="password"
-                  type="password"
-                  value={this.state.password}
-                  onChange={this.onChange}
-                  error={errors.password}
-                />
-                <input type="submit" className="btn btn-info btn-block mt-4" />
-              </form>
+                <div className="remember">
+
+                  <div className="checkbox">
+                    <label>
+                      <input name="optionsCheckboxes" type="checkbox" />
+                      Remember Me
+        </label>
+                  </div>
+                  <a href="#" className="forgot">Forgot my Password</a>
+                </div>
+
+                <input type="submit" className="btn btn-lg btn-primary full-width" />
+
+                <div className="or"></div>
+
+                <a href="#" className="btn btn-lg bg-facebook full-width btn-icon-left"><i className="fab fa-facebook-f" aria-hidden="true"></i>Login with Facebook</a>
+
+                <a href="#" className="btn btn-lg bg-twitter full-width btn-icon-left"><i className="fab fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
+
+
+                <p>Don’t you have an account? <a href="#">Register Now!</a> it’s really simple and you can start enjoing all the benefits!</p>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-      </div>
+      </Landing>
     );
   }
 }

@@ -1,0 +1,28 @@
+/*------------- #W-ACTIVITY-FEED --------------*/
+
+
+.w-activity-feed {
+  .author-thumb {
+	height: 28px;
+	width: 28px;
+	float: left;
+
+	img {
+	  height: 28px;
+	  width: 28px;
+	}
+  }
+
+  .notification-event,
+  .notification-friend {
+	font-size: 12px;
+  }
+
+  .notification-event {
+	max-width: 85%;
+  }
+
+  li > * {
+	vertical-align: top;
+  }
+}

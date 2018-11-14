@@ -11,12 +11,12 @@ const TextAreaFieldGroup = ({
   onChange
 }) => {
   return (
-    <div className="form-group">
+    <div className="form-group label-floating is-focused">
+      <label className="control-label">{placeholder}</label>
       <textarea
         className={classnames('form-control form-control-lg', {
           'is-invalid': error
         })}
-        placeholder={placeholder}
         name={name}
         value={value}
         onChange={onChange}

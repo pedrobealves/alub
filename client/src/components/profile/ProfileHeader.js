@@ -6,94 +6,82 @@ class ProfileHeader extends Component {
     const { profile } = this.props;
 
     return (
-      <div className="row">
-        <div className="col-md-12">
-          <div className="card card-body bg-info text-white mb-3">
-            <div className="row">
-              <div className="col-4 col-md-3 m-auto">
-                <img
-                  className="rounded-circle"
-                  src={profile.user.avatar}
-                  alt=""
-                />
+    <div className="container">
+        <div className="row">
+          <div className="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div className="ui-block">
+              <div className="top-header">
+                <div className="top-header-thumb">
+                  <img src="/assets/img/top-header4.png" alt="nature" />
+                </div>
+                <div className="profile-section">
+                  <div className="row">
+                    <div className="col col-lg-5 col-md-5 col-sm-12 col-12">
+                      <ul className="profile-menu">
+                        <li>
+                          <a href="#" className="active">Inicio</a>
+                        </li>
+                        <li>
+                          <a href="#about">Sobre</a>
+                        </li>
+                        <li>
+                          <a href="#contact">Contato</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col col-lg-5 ml-auto col-md-5 col-sm-12 col-12">
+                      <ul className="profile-menu">
+                        <li>
+                          <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                          <a href="#activities">Atividades</a>
+                        </li>
+                        <li>
+                          <div className="more">
+                            <ul className="more-dropdown more-with-triangle">
+                              <li>
+                                <a href="#"></a>
+                              </li>
+                              <li>
+                                <a href="#"></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="control-block-button">
+                    <div className="btn btn-control bg-primary more">
+                      <svg className="olymp-settings-icon">
+                        <use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-settings-icon" />
+                      </svg>
+                      <ul className="more-dropdown more-with-triangle triangle-bottom-right">
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="#update-header-photo">Atualizar imagem de perfil</a>
+                        </li>
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="#update-header-photo">Atualizar imagem de fundo</a>
+                        </li>
+                        <li>
+                          <a href="">Configurações da conta</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="top-header-author">
+                  <a href="" className="author-thumb">
+                    <img src={profile.user.avatar} alt="author" />
+                  </a>
+                  <div className="author-content">
+                    <a href="02-ProfilePage.html" className="h4 author-name">{profile.user.name}</a>
+                    <div className="country">{profile.location}</div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="text-center">
-              <h1 className="display-4 text-center">{profile.user.name}</h1>
-              <p className="lead text-center">
-                {profile.status}{' '}
-                {isEmpty(profile.company) ? null : (
-                  <span>em {profile.company}</span>
-                )}
-              </p>
-              {isEmpty(profile.location) ? null : <p>{profile.location}</p>}
-              <p>
-                {isEmpty(profile.website) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fas fa-globe fa-2x" />
-                  </a>
-                )}
-
-                {isEmpty(profile.social && profile.social.twitter) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-twitter fa-2x" />
-                  </a>
-                )}
-
-                {isEmpty(profile.social && profile.social.facebook) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.social.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook fa-2x" />
-                  </a>
-                )}
-
-                {isEmpty(profile.social && profile.social.linkedin) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin fa-2x" />
-                  </a>
-                )}
-
-                {isEmpty(profile.social && profile.social.youtube) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.social.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-youtube fa-2x" />
-                  </a>
-                )}
-
-                {isEmpty(profile.social && profile.social.instagram) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.social.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-instagram fa-2x" />
-                  </a>
-                )}
-              </p>
             </div>
           </div>
         </div>

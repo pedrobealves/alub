@@ -72,52 +72,67 @@ class CreateProfile extends Component {
 
     if (displaySocialInputs) {
       socialInputs = (
-        <div>
-          <InputGroup
-            placeholder="Twitter URL"
-            name="twitter"
-            icon="fab fa-twitter"
-            value={this.state.twitter}
-            onChange={this.onChange}
-            error={errors.twitter}
-          />
+        <React.Fragment>
+          <div className="form-group with-icon label-floating">
 
-          <InputGroup
-            placeholder="Facebook URL"
-            name="facebook"
-            icon="fab fa-facebook"
-            value={this.state.facebook}
-            onChange={this.onChange}
-            error={errors.facebook}
-          />
+            <InputGroup
+              placeholder="Twitter URL"
+              name="twitter"
+              icon="fab fa-twitter"
+              value={this.state.twitter}
+              onChange={this.onChange}
+              error={errors.twitter}
+            />
+          </div>
+          <div className="form-group with-icon label-floating">
 
-          <InputGroup
-            placeholder="Linkedin URL"
-            name="linkedin"
-            icon="fab fa-linkedin"
-            value={this.state.linkedin}
-            onChange={this.onChange}
-            error={errors.linkedin}
-          />
+            <InputGroup
+              placeholder="Facebook URL"
+              name="facebook"
+              icon="fab fa-facebook"
+              value={this.state.facebook}
+              onChange={this.onChange}
+              error={errors.facebook}
+            />
+          </div>
 
-          <InputGroup
-            placeholder="YouTube URL"
-            name="youtube"
-            icon="fab fa-youtube"
-            value={this.state.youtube}
-            onChange={this.onChange}
-            error={errors.youtube}
-          />
+          <div className="form-group with-icon label-floating">
 
-          <InputGroup
-            placeholder="Instagram URL"
-            name="instagram"
-            icon="fab fa-instagram"
-            value={this.state.instagram}
-            onChange={this.onChange}
-            error={errors.instagram}
-          />
-        </div>
+            <InputGroup
+              placeholder="Linkedin URL"
+              name="linkedin"
+              icon="fab fa-linkedin"
+              value={this.state.linkedin}
+              onChange={this.onChange}
+              error={errors.linkedin}
+            />
+          </div>
+
+          <div className="form-group with-icon label-floating">
+
+            <InputGroup
+              placeholder="YouTube URL"
+              name="youtube"
+              icon="fab fa-youtube"
+              value={this.state.youtube}
+              onChange={this.onChange}
+              error={errors.youtube}
+            />
+          </div>
+
+          <div className="form-group with-icon label-floating">
+
+            <InputGroup
+              placeholder="Instagram URL"
+              name="instagram"
+              icon="fab fa-instagram"
+              value={this.state.instagram}
+              onChange={this.onChange}
+              error={errors.instagram}
+            />
+          </div>
+
+        </React.Fragment>
       );
     }
 
@@ -131,7 +146,7 @@ class CreateProfile extends Component {
       { label: 'Outro', value: 'Outro' }
     ];
 
-    return (
+    const bck = (
       <div className="create-profile">
         <div className="container">
           <div className="row">
@@ -233,6 +248,220 @@ class CreateProfile extends Component {
           </div>
         </div>
       </div>
+    )
+
+    return (
+      <React.Fragment>
+
+        <div className="container">
+          <div className="row">
+            <div className="col col-xl-9 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">
+              <div className="ui-block">
+                <div className="ui-block-title">
+                  <h6 className="title">Informações</h6>
+                </div>
+                <div className="ui-block-content">
+
+
+                  <form onSubmit={this.onSubmit}>
+                    <div className="row">
+
+                      <div className="col col-lg-12 col-md-12 col-sm-12 col-12">
+                        <TextFieldGroup
+                          placeholder="Nome de Perfil"
+                          name="handle"
+                          value={this.state.handle}
+                          onChange={this.onChange}
+                          error={errors.handle}
+                        />
+                      </div>
+
+                      <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div className="form-group label-floating is-select">
+                          <SelectListGroup
+                            placeholder="Status"
+                            name="status"
+                            value={this.state.status}
+                            onChange={this.onChange}
+                            options={options}
+                            error={errors.status}
+                          />
+                        </div>
+
+                        <TextFieldGroup
+                          placeholder="Website"
+                          name="website"
+                          value={this.state.website}
+                          onChange={this.onChange}
+                          error={errors.website}
+                        />
+
+                        <div className="form-group date-time-picker label-floating">
+                          <label className="control-label">Data de Nascimento</label>
+                          <input name="datetimepicker"/>
+                          <span className="input-group-addon">
+                            <svg className="olymp-month-calendar-icon icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-month-calendar-icon"></use></svg>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <TextFieldGroup
+                          placeholder="Companhia"
+                          name="company"
+                          value={this.state.company}
+                          onChange={this.onChange}
+                          error={errors.company}
+                        />
+
+                        <TextFieldGroup
+                          placeholder="Github"
+                          name="githubusername"
+                          value={this.state.githubusername}
+                          onChange={this.onChange}
+                          error={errors.githubusername}
+                        />
+
+
+                        <div className="form-group label-floating is-empty">
+                          <label className="control-label">Seu Número</label>
+                          <input className="form-control" placeholder="" type="text" />
+                        </div>
+                      </div>
+
+                      <div className="col col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div className="form-group label-floating is-select">
+                          <label className="control-label">Your Country</label>
+                          <select className="form-control">
+                            <option value="US">United States</option>
+                            <option value="AU">Australia</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="col col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div className="form-group label-floating is-select">
+                          <label className="control-label">Your State / Province</label>
+                          <select className="form-control">
+                            <option value="CA">California</option>
+                            <option value="TE">Texas</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="col col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div className="form-group label-floating is-select">
+                          <label className="control-label">Your City</label>
+                          <select className="form-control">
+                            <option value="SF">San Francisco</option>
+                            <option value="NY">New York</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <TextAreaFieldGroup
+                          placeholder="Biografia"
+                          name="bio"
+                          value={this.state.bio}
+                          onChange={this.onChange}
+                          error={errors.bio}
+                          info="Conte-nos um pouco sobre você"
+                        />
+                      </div>
+                      <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div className="form-group label-floating is-select">
+                          <label className="control-label">Seu Genêro</label>
+                          <select className="form-control">
+                            <option value="OR">Outro</option>
+                            <option value="MA">Homem</option>
+                            <option value="FE">Mulher</option>
+                          </select>
+                        </div>
+                        <TextFieldGroup
+                          placeholder="* Habilidades"
+                          name="skills"
+                          value={this.state.skills}
+                          onChange={this.onChange}
+                          error={errors.skills}
+                          info="Por favor, use valores separados por vírgula (por exemplo, Photoshop, CSS, JavaScript"
+                        />
+                      </div>
+                      <div className="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <button
+                          type="button"
+                          onClick={() => {
+                            this.setState(prevState => ({
+                              displaySocialInputs: !prevState.displaySocialInputs
+                            }));
+                          }}
+                          className="btn btn-light"
+                        >
+                          Adicionar Redes Sociais
+                  </button>
+                        <span className="text-muted m-2">Opcional</span>
+                        {socialInputs}
+                      </div>
+                      <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <button className="btn btn-secondary btn-lg full-width">Restore all Attributes</button>
+                      </div>
+                      <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <button type="submit" className="btn btn-primary btn-lg full-width">Save all Changes</button>
+                      </div>
+
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+            <div className="col col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-md-12 order-md-2 col-sm-12  responsive-display-none">
+              <div className="ui-block">
+
+
+
+
+                <div className="your-profile">
+                  <div className="ui-block-title ui-block-title-small">
+                    <h6 className="title">Seu PERFIL</h6>
+                  </div>
+
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingOne">
+                        <h6 className="mb-0">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Configurações
+										<svg className="olymp-dropdown-arrow-icon"><use xlinkHref="svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon"></use></svg>
+                          </a>
+                        </h6>
+                      </div>
+
+                      <div id="collapseOne" className="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <ul className="your-profile-menu">
+                          <li>
+                            <a href="">Criar Perfil</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+  
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a className="back-to-top" href="#">
+          <img src="/assets/svg-icons/back-to-top.svg" alt="arrow" className="back-icon" />
+        </a>
+
+
+      </React.Fragment>
     );
   }
 }

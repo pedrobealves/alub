@@ -1,0 +1,54 @@
+/*------------- #CALENDAR-EVENTS-TABS --------------*/
+
+
+.calendar-events-tabs {
+  .nav-item {
+	display: inline-block;
+
+	& + .nav-item {
+	  margin-left: 60px;
+	}
+  }
+
+  &.nav-tabs {
+	border-bottom: none;
+
+	.nav-link {
+	  padding: 0;
+	  border: none;
+	  border-color: transparent;
+	  font-weight: 700;
+	  font-size: 14px;
+	  color: $body-font-color;
+
+	  &.active {
+		color: #515365;
+		background-color: transparent;
+	  }
+	}
+
+	.items-round-little {
+	  display: inline-block;
+	}
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 420px) {
+  .calendar-events-tabs .nav-item + .nav-item {
+	margin-left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .calendar-events-tabs .nav-item {
+	display: block;
+  }
+
+  .calendar-events-tabs .nav-item + .nav-item {
+	margin-left: 0;
+	margin-top: 10px;
+  }
+}

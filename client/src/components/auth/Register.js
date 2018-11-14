@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { registerUser } from '../../actions/authActions';
 import TextFieldGroup from '../common/TextFieldGroup';
+import Landing from '../layout/Landing'
 
 class Register extends Component {
   constructor() {
@@ -19,7 +20,7 @@ class Register extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-
+  
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push('/dashboard');
@@ -31,6 +32,7 @@ class Register extends Component {
       this.setState({ errors: nextProps.errors });
     }
   }
+
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
@@ -53,23 +55,25 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="register">
-        <div className="container">
+      <Landing>
+      <div className="tab-pane" id="home" role="tabpanel" data-mh="log-tab">
+        <div className="title h6">Registrar no alub</div>
+        <form noValidate onSubmit={this.onSubmit} className="content">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Inscreva-se</h1>
-              <p className="lead text-center">
-                Criar sua conta do Alub 
-              </p>
-              <form noValidate onSubmit={this.onSubmit}>
-                <TextFieldGroup
+            <div className="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div className="form-group label-floating is-empty">
+              <TextFieldGroup
                   placeholder="Name"
                   name="name"
                   value={this.state.name}
                   onChange={this.onChange}
                   error={errors.name}
                 />
-                <TextFieldGroup
+              </div>
+            </div>
+            <div className="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div className="form-group label-floating is-empty">
+              <TextFieldGroup
                   placeholder="Email"
                   name="email"
                   type="email"
@@ -78,7 +82,9 @@ class Register extends Component {
                   error={errors.email}
                   info="Este site utiliza o Gravatar, se quiser uma imagem de perfil, use um email do Gravatar"
                 />
-                <TextFieldGroup
+              </div>
+              <div className="form-group label-floating is-empty">
+              <TextFieldGroup
                   placeholder="Password"
                   name="password"
                   type="password"
@@ -86,7 +92,9 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.password}
                 />
-                <TextFieldGroup
+              </div>
+              <div className="form-group label-floating is-empty">
+              <TextFieldGroup
                   placeholder="Confirm Password"
                   name="password2"
                   type="password"
@@ -94,12 +102,13 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.password2}
                 />
-                <input type="submit" className="btn btn-info btn-block mt-4" />
-              </form>
+              </div>
+              <input type="submit" className="btn btn-purple btn-lg full-width" />
             </div>
           </div>
-        </div>
+        </form>
       </div>
+      </Landing>
     );
   }
 }
