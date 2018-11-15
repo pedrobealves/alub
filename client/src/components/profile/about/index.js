@@ -7,6 +7,7 @@ import ProfileGithub from './ProfileGithub'
 import ProfileContact from './ProfileContact'
 import ProfileFooter from './ProfileFooter'
 import ProfileActivities from './ProfileActivities'
+import Blog from '../../blog'
 import Wrapper from './Wrapper'
 
 class About extends Component {
@@ -23,6 +24,7 @@ class About extends Component {
               education={profile.education}
               experience={profile.experience}
             />
+            <Blog profile={profile}/>
             {profile.activities ? (
               <ProfileActivities activities={profile.activities} />
             ) : null}

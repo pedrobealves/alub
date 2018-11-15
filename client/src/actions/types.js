@@ -11,3 +11,10 @@ export const GET_POSTS = 'GET_POSTS';
 export const GET_POST = 'GET_POST';
 export const ADD_POST = 'ADD_POST';
 export const DELETE_POST = 'DELETE_POST';
+
+export const ADD_BLOG_POST = "ADD_BLOG_POST";
+export const GET_BLOG_POSTS = "GET_BLOG_POSTS";
+export const GET_BLOG_POST = "GET_BLOG_POST";
+export const BLOG_POST_LOADING = "BLOG_POST_LOADING";
+export const DELETE_BLOG_POST = "DELETE_BLOG_POST";
+export const GET_USER_BLOG_POST = "GET_USER_BLOG_POST";
