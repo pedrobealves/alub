@@ -64,7 +64,7 @@ export const createProfile = (profileData, history) => dispatch => {
 export const editUser = (userData, history) => dispatch => {
   axios
     .post('/api/users', userData)
-    .then(res => history.push('/'))
+    .then(res => window.location.reload())
     .catch(err =>
       dispatch({
         type: GET_ERRORS,

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../../actions/authActions';
-import { clearCurrentProfile } from '../../../actions/profileActions';
+import { getCurrentProfile, clearCurrentProfile } from '../../../actions/profileActions';
 import SidebarLeft from './sidebar/SidebarLeft'
 import SidebarRight from './sidebar/SidebarRight'
 import { ReactComponent as Logo } from './logo.svg';
@@ -12,11 +12,14 @@ class Navbar extends Component {
   onLogoutClick(e) {
     e.preventDefault();
     this.props.clearCurrentProfile();
+    this.props.getCurrentProfile();
     this.props.logoutUser();
   }
 
   render() {
     const { isAuthenticated, user } = this.props.auth;
+    const { profile } = this.props.profile;
+    console.log(profile)
 
     const authLinks = (
       <div className="author-page author vcard inline-items more">
@@ -130,13 +133,13 @@ class Navbar extends Component {
 
           </div>
         </div>
-        <a href="02-ProfilePage.html" className="author-name fn">
+        <Link to={`/`} className="author-name fn">
           <div className="author-title">
             {user.name}
             <svg className="olymp-dropdown-arrow-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon"></use></svg>
           </div>
           <span className="author-subtitle"></span>
-        </a>
+        </Link>
       </div>
 
     );
@@ -986,14 +989,17 @@ class Navbar extends Component {
 }
 
 Navbar.propTypes = {
+  getCurrentProfile: PropTypes.func.isRequired,
   logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired,
+  profile: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
+  profile: state.profile,
   auth: state.auth
 });
 
-export default connect(mapStateToProps, { logoutUser, clearCurrentProfile })(
+export default connect(mapStateToProps, { getCurrentProfile, logoutUser, clearCurrentProfile })(
   Navbar
 );

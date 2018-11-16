@@ -83,35 +83,12 @@ router.post(
     if (req.body.avatar) userFields.avatar = req.body.avatar;
     if (req.body.password) userFields.password = req.body.password;
 
-      User.findOne({ id: req.id }).then(user => {
-        if (user) {
-          User.findOneAndUpdate(
-            { id: req.id },
-            { $set: userFields },
-            { new: true }
-          ).then(profile => res.json(profile));
-        } else {
-          /*const avatar = req.body.avatar;
+    User.findOneAndUpdate(
+      { _id: req.user.id },
+      { $set: userFields },
+      { new: true }
+    ).then(profile => res.json(profile));
 
-          const newUser = new User({
-            name: req.body.name,
-            email: req.body.email,
-            avatar,
-            password: req.body.password
-          });
-    
-          bcrypt.genSalt(10, (err, salt) => {
-            bcrypt.hash(newUser.password, salt, (err, hash) => {
-              if (err) throw err;
-              newUser.password = hash;
-              newUser
-                .save()
-                .then(user => res.json(user))
-                .catch(err => console.log(err));
-            });
-          });*/
-        }
-      });
   }
 );
 
