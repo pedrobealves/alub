@@ -32,7 +32,7 @@ class About extends Component {
               <ProfileGithub username={profile.githubusername} />
             ) : null}
             <ProfileContact />
-            <ProfileFooter />
+            <ProfileFooter portfolio={profile.portfolio}/>
           </Wrapper>
         </div>
       </div>

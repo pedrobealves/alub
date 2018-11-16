@@ -30,32 +30,45 @@ class ProfileInfo extends Component {
                     )}
                 </span>
               </li>
-              <li>
-                <span className="title">Nascimento:</span>
-                <span className="text">
-                  <Moment fromNow ago>{/*profile.birthday.$date*/}</Moment>
-                </span>
-              </li>
-              <li>
-                <span className="title">De:</span>
-                <span className="text">{profile.location}</span>
-              </li>
+              {isEmpty(profile.birthday) ? null : (
+                <li>
+                  <span className="title">Nascimento:</span>
+                  <span className="text">
+                    <Moment fromNow ago>{profile.birthday}</Moment>
+                  </span>
+                </li>
+              )}
+              {isEmpty(profile.location) ? null : (
+                <li>
+                  <span className="title">De:</span>
+                  <span className="text">{profile.location}</span>
+                </li>
+              )}
               <li>
                 <span className="title">Ocupação:</span>
-                <span className="text">{profile.status}</span>
+                {profile.status}{' '}
+                {isEmpty(profile.company) ? null : (
+                  <span>em {profile.company}</span>
+                )}
               </li>
-              <li>
-                <span className="title">Sexo:</span>
-                <span className="text">{profile.gender}</span>
-              </li>
-              <li>
-                <span className="title">Email:</span>
-                <a href="#contact" className="text">{profile.user.email}</a>
-              </li>
-              <li>
-                <span className="title">Website:</span>
-                <a href={profile.website} className="text">{profile.website}</a>
-              </li>
+              {isEmpty(profile.gender) ? null : (
+                <li>
+                  <span className="title">Sexo:</span>
+                  <span className="text">{profile.gender}</span>
+                </li>
+              )}
+              {isEmpty(profile.user.email) ? null : (
+                <li>
+                  <span className="title">Email:</span>
+                  <a href="#contact" className="text">{profile.user.email}</a>
+                </li>
+              )}
+              {isEmpty(profile.website) ? null : (
+                <li>
+                  <span className="title">Website:</span>
+                  <a href={profile.website} className="text">{profile.website}</a>
+                </li>
+              )}
             </ul>
 
 

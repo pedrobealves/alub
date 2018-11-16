@@ -15,6 +15,12 @@ const ProfileSchema = new Schema({
   company: {
     type: String
   },
+  birthday: {
+    type: Date
+  },
+  gender: {
+    type: String
+  },
   portfolio: {
     type: String
   },
@@ -31,6 +37,12 @@ const ProfileSchema = new Schema({
   skills: {
     type: [String],
     required: true
+  },
+  interests: {
+    type: [String]
+  },
+  languages: {
+    type: [String]
   },
   bio: {
     type: String
