@@ -74,23 +74,17 @@ class InputUpload extends Component {
     )
 
     const upload = (
-      <div style={style}>
+      <div>
       <progress value={this.state.progress} max="100" />
       <br />
       <input type="file" onChange={this.handleChange} />
-      <button onClick={this.handleUpload}>Upload</button>
+      <button class="btn btn-secondary btn-sm" onClick={this.handleUpload}>Upload</button>
       <br />
       <img src={this.state.url || 'http://via.placeholder.com/400x300'} alt="Uploaded images" height="300" width="400" />
+      <a onClick={this.toggleHidden.bind(this)} href="#" class="btn btn-secondary btn-sm">voltar</a>
     </div>
     )
 
-    const style = {
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center'
-    };
     return (
       <div class="modal fade" id="update-header-photo" tabindex="-1" role="dialog" aria-labelledby="update-header-photo" aria-hidden="true">
         <div class="modal-dialog window-popup update-header-photo" role="document">

@@ -9,6 +9,20 @@ class ProfileAbout extends Component {
     // Get first name
     const firstName = profile.user.name.trim().split(' ')[0];
 
+    // interests List
+    const interests = profile.interests.map((interests, index) => (
+      <div key={index} className="p-3">
+        <i className="fas fa-angle-right" /> {interests}
+      </div>
+    ));
+
+    // languages List
+    const languages = profile.languages.map((languages, index) => (
+      <div key={index} className="p-3">
+        <i className="fas fa-angle-right" /> {languages}
+      </div>
+    ));
+
     // Skill List
     const skills = profile.skills.map((skill, index) => (
       <div key={index} className="p-3">
@@ -16,24 +30,41 @@ class ProfileAbout extends Component {
       </div>
     ));
 
+
     return (
-      <div className="row">
-        <div className="col-md-12">
-          <div className="card card-body bg-light mb-3">
-            <h3 className="text-center text-info">Biografia de {firstName}</h3>
-            <p className="lead">
-              {isEmpty(profile.bio) ? (
+      <div className="ui-block" id="about">
+        <div className="ui-block-title">
+          <h6 className="title">Sobre</h6>
+        </div>
+        <div className="ui-block-content">
+          <div className="row">
+            <div className="col-12">
+              <span className="text">{isEmpty(profile.bio) ? (
                 <span>{firstName} não tem uma biografia</span>
               ) : (
-                <span>{profile.bio}</span>
-              )}
-            </p>
-            <hr />
-            <h3 className="text-center text-info">Habilidades</h3>
-            <div className="row">
-              <div className="d-flex flex-wrap justify-content-center align-items-center">
-                {skills}
-              </div>
+                  <span>{profile.bio}</span>
+                )}</span>
+            </div>
+            <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+              <ul className="widget w-personal-info item-block">
+                <li>
+                  <span className="title">Habilidades:</span>
+                  <span className="text">{skills}</span>
+                </li>
+                <li>
+                  <span className="title">Idiomas:</span>
+                  <span className="text">{languages}</span>
+                </li>
+              </ul>
+
+            </div>
+            <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+              <ul className="widget w-personal-info item-block">
+                <li>
+                  <span className="title">Interesses:</span>
+                  <span className="text">{interests}</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

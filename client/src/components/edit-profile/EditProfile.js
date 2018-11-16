@@ -9,6 +9,7 @@ import SelectListGroup from '../common/SelectListGroup';
 import SidebarProfile from '../layout/navbar/sidebar/SidebarProfile'
 import { createProfile, getCurrentProfile } from '../../actions/profileActions';
 import isEmpty from '../../validation/is-empty';
+import InputUpload from '../common/InputUpload'
 
 class CreateProfile extends Component {
 	constructor(props) {
@@ -20,7 +21,12 @@ class CreateProfile extends Component {
 			website: '',
 			location: '',
 			status: '',
+			portfolio: '',
+			gender: '',
+			birthday: '',
 			skills: '',
+			languages: '',
+			interests: '',
 			githubusername: '',
 			bio: '',
 			twitter: '',
@@ -50,9 +56,18 @@ class CreateProfile extends Component {
 			// Bring skills array back to CSV
 			const skillsCSV = profile.skills.join(',');
 
+			// Bring skills array back to CSV
+			const languagesCSV = profile.languages.join(',');
+
+			// Bring skills array back to CSV
+			const interestsCSV = profile.interests.join(',');
+
 			// If profile field doesnt exist, make empty string
 			profile.company = !isEmpty(profile.company) ? profile.company : '';
 			profile.website = !isEmpty(profile.website) ? profile.website : '';
+			profile.portfolio = !isEmpty(profile.portfolio) ? profile.portfolio : '';
+			profile.gender = !isEmpty(profile.gender) ? profile.gender : '';
+			profile.birthday = !isEmpty(profile.birthday) ? profile.birthday : '';
 			profile.location = !isEmpty(profile.location) ? profile.location : '';
 			profile.githubusername = !isEmpty(profile.githubusername)
 				? profile.githubusername
@@ -82,7 +97,12 @@ class CreateProfile extends Component {
 				website: profile.website,
 				location: profile.location,
 				status: profile.status,
+				portfolio: profile.portfolio,
+				gender: profile.gender,
+				birthday: profile.birthday,
 				skills: skillsCSV,
+				interests: interestsCSV,
+				languages: languagesCSV,
 				githubusername: profile.githubusername,
 				bio: profile.bio,
 				twitter: profile.twitter,
@@ -103,7 +123,13 @@ class CreateProfile extends Component {
 			website: this.state.website,
 			location: this.state.location,
 			status: this.state.status,
+			portfolio: this.state.portfolio,
+			gender: this.state.gender,
+			birthday: this.state.birthday,
+			profile: this.state.profile,
 			skills: this.state.skills,
+			languages: this.state.languages,
+			interests: this.state.interests,
 			githubusername: this.state.githubusername,
 			bio: this.state.bio,
 			twitter: this.state.twitter,
@@ -118,6 +144,13 @@ class CreateProfile extends Component {
 
 	onChange(e) {
 		this.setState({ [e.target.name]: e.target.value });
+	}
+
+	stateUpload = (src) => {
+		console.log(src)
+		this.setState(
+			{ portfolio: src.avatar }
+		)
 	}
 
 	render() {
@@ -230,6 +263,46 @@ class CreateProfile extends Component {
 													onChange={this.onChange}
 													error={errors.website}
 												/>
+
+												<div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+													<div class="form-group with-button">
+														<TextFieldGroup
+															placeholder="PDF"
+															name="portfolio"
+															value={this.state.portfolio}
+														/>
+														<a href="#" data-toggle="modal" data-target="#update-header-photo">
+															<button className="bg-grey">
+																<svg class="olymp-computer-icon">
+																	<use xlinkHref="./assets/svg-icons/sprites/icons.svg#olymp-computer-icon"></use>
+																</svg>
+															</button>
+														</a>
+													</div>
+												</div>
+
+												<SelectListGroup
+													placeholder="Sexo"
+													name="gender"
+													value={this.state.gender}
+													onChange={this.onChange}
+													options={[
+														{ label: 'Selecione', value: 0 },
+														{ label: 'M', value: 'M' },
+														{ label: 'F', value: 'F' },
+														{ label: 'Outro', value: 'Outro' },
+													]}
+													error={errors.status}
+												/>
+
+												<TextFieldGroup
+													placeholder="Idiomas"
+													name="languages"
+													value={this.state.languages}
+													onChange={this.onChange}
+													error={errors.skills}
+												/>
+
 											</div>
 
 											<div className="col col-lg-6 col-md-6 col-sm-12 col-12">
@@ -260,6 +333,21 @@ class CreateProfile extends Component {
 													value={this.state.bio}
 													onChange={this.onChange}
 													error={errors.bio}
+												/>
+												<TextFieldGroup
+													placeholder="Nascimento"
+													name="birthday"
+													type="date"
+													value={this.state.birthday}
+													onChange={this.onChange}
+													error={errors.birthday}
+												/>
+												<TextFieldGroup
+													placeholder="Interesses"
+													name="interests"
+													value={this.state.interests}
+													onChange={this.onChange}
+													error={errors.skills}
 												/>
 											</div>
 
@@ -297,6 +385,7 @@ class CreateProfile extends Component {
 				<a className="back-to-top" href="#">
 					<img src="/assets/svg-icons/back-to-top.svg" alt="arrow" className="back-icon" />
 				</a>
+				<InputUpload editUser={this.stateUpload} />
 			</React.Fragment>
 		);
 	}

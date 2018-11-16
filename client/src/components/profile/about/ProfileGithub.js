@@ -6,7 +6,7 @@ class ProfileGithub extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clientId: '32ec9bac239adec67283',
+      clientId: '32ec9bac239adec67283',
       clientSecret: 'e17c8be88120f6d8cc64f7dbed5c97f0689933c9s',
       count: 5,
       sort: 'created: asc',
@@ -38,17 +38,17 @@ class ProfileGithub extends Component {
         <div className="row">
           <div className="col-md-6">
             <h4>
-              <Link to={repo.html_url} className="text-info" target="_blank">
+              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                 {repo.name}
-              </Link>
+              </a>
             </h4>
             <p>{repo.description}</p>
           </div>
           <div className="col-md-6">
-            <span className="badge badge-info mr-1">
+            <span className="badge badge-primary mr-1">
               Stars: {repo.stargazers_count}
             </span>
-            <span className="badge badge-secondary mr-1">
+            <span className="badge badge-danger mr-1">
               Watchers: {repo.watchers_count}
             </span>
             <span className="badge badge-success">
@@ -59,10 +59,13 @@ class ProfileGithub extends Component {
       </div>
     ));
     return (
-      <div ref="myRef">
-        <hr />
-        <h3 className="mb-4">Últimos Repos Github</h3>
-        {repoItems}
+      <div className="ui-block" ref="myRef">
+        <div className="ui-block-title">
+          <h6 className="title">Últimos Repositórios Github</h6>
+        </div>
+        <div className="ui-block-content">
+          {repoItems}
+        </div>
       </div>
     );
   }

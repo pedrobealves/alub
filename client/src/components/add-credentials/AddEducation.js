@@ -63,38 +63,6 @@ class AddEducation extends Component {
   render() {
     const { errors } = this.state;
 
-    const bck = (
-      <div className="add-education">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-light">
-                Voltar
-              </Link>
-              <h1 className="display-4 text-center">Adicionar Educação</h1>
-              <p className="lead text-center">
-                Adicione qualquer escola, mini-curso, palestra que você tenha assistido, etc
-              </p>
-              <small className="d-block pb-3">* = required fields</small>
-              <form onSubmit={this.onSubmit}>
-
-
-
-
-
-
-                <input
-                  type="submit"
-                  value="Adicionar"
-                  className="btn btn-info btn-block mt-4"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-
     return (
       <React.Fragment>
         <div class="container">
@@ -102,7 +70,7 @@ class AddEducation extends Component {
             <div class="col col-xl-9 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">
               <div class="ui-block">
                 <div class="ui-block-title">
-                  <h6 class="title">Adiconar Experiências</h6>
+                  <h6 class="title">Adiconar Educação</h6>
                 </div>
                 <div class="ui-block-content">
 
@@ -195,7 +163,7 @@ class AddEducation extends Component {
 
                         <Link to="/add-experience" className="add-field">
                           <svg class="olymp-plus-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-plus-icon"></use></svg>
-                          <span>Add Educação</span>
+                          <span>Add Experiência</span>
                         </Link>
                       </div>
 
