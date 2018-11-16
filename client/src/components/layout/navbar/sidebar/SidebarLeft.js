@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class SidebarLeft extends Component {
 
@@ -10,11 +11,11 @@ class SidebarLeft extends Component {
 				<div className="fixed-sidebar">
 					<div className="fixed-sidebar-left sidebar--small" id="sidebar-left">
 
-						<a href="02-ProfilePage.html" className="logo">
+						<Link to="/" className="logo">
 							<div className="img-wrap">
 								<img src="/assets/img/logo.png" alt="Olympus" />
 							</div>
-						</a>
+						</Link>
 
 						<div className="mCustomScrollbar" data-mcs-theme="dark">
 							<ul className="left-menu">
@@ -24,9 +25,9 @@ class SidebarLeft extends Component {
 									</a>
 								</li>
 								<li>
-									<a href="03-Newsfeed.html">
+									<Link to="/feed">
 										<svg className="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="NEWSFEED"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-newsfeed-icon"></use></svg>
-									</a>
+									</Link>
 								</li>
 								<li>
 									<a href="16-FavPagesFeed.html">
