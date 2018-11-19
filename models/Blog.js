@@ -19,6 +19,12 @@ const BlogSchema = new Schema({
     type: String,
     required: true
   },
+  category: {
+    type: [String]
+  },
+  tag: {
+    type: [String]
+  },
   name: {
     type: String
   },

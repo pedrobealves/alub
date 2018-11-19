@@ -30,47 +30,47 @@ class SidebarLeft extends Component {
 									</Link>
 								</li>
 								<li>
-									<a href="16-FavPagesFeed.html">
+									<a href="">
 										<svg className="olymp-star-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="FAV PAGE"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-star-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="17-FriendGroups.html">
+									<a href="">
 										<svg className="olymp-happy-faces-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="FRIEND GROUPS"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-happy-faces-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="18-MusicAndPlaylists.html">
+									<a href="">
 										<svg className="olymp-headphones-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="MUSIC&PLAYLISTS"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-headphones-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="19-WeatherWidget.html">
+									<a href="">
 										<svg className="olymp-weather-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="WEATHER APP"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-weather-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="20-CalendarAndEvents-MonthlyCalendar.html">
+									<a href="">
 										<svg className="olymp-calendar-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="CALENDAR AND EVENTS"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-calendar-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="24-CommunityBadges.html">
+									<a href="">
 										<svg className="olymp-badge-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="Community Badges"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-badge-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="25-FriendsBirthday.html">
+									<a href="">
 										<svg className="olymp-cupcake-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="Friends Birthdays"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-cupcake-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="26-Statistics.html">
+									<a href="">
 										<svg className="olymp-stats-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="Account Stats"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-stats-icon"></use></svg>
 									</a>
 								</li>
 								<li>
-									<a href="27-ManageWidgets.html">
+									<a href="">
 										<svg className="olymp-manage-widgets-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="Manage Widgets"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-manage-widgets-icon"></use></svg>
 									</a>
 								</li>

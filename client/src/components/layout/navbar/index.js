@@ -29,24 +29,24 @@ class Navbar extends Component {
           <div className="more-dropdown more-with-triangle">
             <div className="mCustomScrollbar" data-mcs-theme="dark">
               <div className="ui-block-title ui-block-title-small">
-                <h6 className="title">Your Account</h6>
+                <h6 className="title">Minha conta</h6>
               </div>
 
               <ul className="account-settings">
                 <li>
-                  <a href="29-YourAccount-AccountSettings.html">
+                  <Link to="/edit-profile">
 
                     <svg className="olymp-menu-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-menu-icon"></use></svg>
 
-                    <span>Profile Settings</span>
-                  </a>
+                    <span>Configurações</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="36-FavPage-SettingsAndCreatePopup.html">
-                    <svg className="olymp-star-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="FAV PAGE"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-star-icon"></use></svg>
+                  <Link to="/blog">
+                    <svg className="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right" data-original-title="FAV PAGE"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-newsfeed-icon"></use></svg>
 
-                    <span>Create Fav Page</span>
-                  </a>
+                    <span>Fazer Postagem</span>
+                  </Link>
                 </li>
                 <li>
                   <a href=""
@@ -54,13 +54,13 @@ class Navbar extends Component {
                     className="nav-link">
                     <svg className="olymp-logout-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-logout-icon"></use></svg>
 
-                    <span>Log Out</span>
+                    <span>Deslogar</span>
                   </a>
                 </li>
               </ul>
 
               <div className="ui-block-title ui-block-title-small">
-                <h6 className="title">Chat Settings</h6>
+                <h6 className="title">Configurações do Chat</h6>
               </div>
 
               <ul className="chat-settings">
@@ -73,30 +73,30 @@ class Navbar extends Component {
                 <li>
                   <a href="#">
                     <span className="icon-status away"></span>
-                    <span>Away</span>
+                    <span>Fora</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span className="icon-status disconected"></span>
-                    <span>Disconnected</span>
+                    <span>Desconectado</span>
                   </a>
                 </li>
 
                 <li>
                   <a href="#">
                     <span className="icon-status status-invisible"></span>
-                    <span>Invisible</span>
+                    <span>Invisível</span>
                   </a>
                 </li>
               </ul>
 
               <div className="ui-block-title ui-block-title-small">
-                <h6 className="title">Custom Status</h6>
+                <h6 className="title">Alub Status</h6>
               </div>
 
               <form className="form-group with-button custom-status">
-                <input className="form-control" placeholder="" type="text" value="Space Cowboy" />
+                <input className="form-control" placeholder="" type="text" value="" />
 
                 <button className="bg-purple">
                   <svg className="olymp-check-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-check-icon"></use></svg>
@@ -104,13 +104,13 @@ class Navbar extends Component {
               </form>
 
               <div className="ui-block-title ui-block-title-small">
-                <h6 className="title">About Olympus</h6>
+                <h6 className="title">Sobre</h6>
               </div>
 
               <ul>
                 <li>
                   <a href="#">
-                    <span>Terms and Conditions</span>
+                    <span>Termos e Condições</span>
                   </a>
                 </li>
                 <li>
@@ -120,12 +120,12 @@ class Navbar extends Component {
                 </li>
                 <li>
                   <a href="#">
-                    <span>Careers</span>
+                    <span>Politicas</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span>Contact</span>
+                    <span>Contato</span>
                   </a>
                 </li>
               </ul>
@@ -213,7 +213,7 @@ class Navbar extends Component {
           <div className="header-content-wrapper">
             <form className="search-bar w-search notification-list friend-requests">
               <div className="form-group with-button">
-                <input className="form-control js-user-search" placeholder="Search here people or pages..." type="text" />
+                <input className="form-control js-user-search" placeholder="Procurar pessoas ou páginas..." type="text" />
                 <button>
                   <svg className="olymp-magnifying-glass-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon"></use></svg>
                 </button>
@@ -230,20 +230,20 @@ class Navbar extends Component {
 
                 <div className="more-dropdown more-with-triangle triangle-top-center">
                   <div className="ui-block-title ui-block-title-small">
-                    <h6 className="title">FRIEND REQUESTS</h6>
+                    <h6 className="title">Amigos</h6>
                     <Link to="/profiles">Explorar</Link>
-                    <a href="#">Settings</a>
+                    <a href="#">Configurações</a>
                   </div>
 
                   <div className="mCustomScrollbar" data-mcs-theme="dark">
                     <ul className="notification-list friend-requests">
                       <li>
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar55-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge7.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">Tamara Romanoff</a>
-                          <span className="chat-message-item">Mutual Friend: Sarah Hetfield</span>
+                          <a href="#" className="h6 notification-friend">Nome</a>
+                          <span className="chat-message-item">Amigo: Nome</span>
                         </div>
                         <span className="notification-icon">
                           <a href="#" className="accept-request">
@@ -267,11 +267,11 @@ class Navbar extends Component {
 
                       <li>
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar56-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge2.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">Tony Stevens</a>
-                          <span className="chat-message-item">4 Friends in Common</span>
+                          <a href="#" className="h6 notification-friend">Nome</a>
+                          <span className="chat-message-item">4 Amigos em Comum</span>
                         </div>
                         <span className="notification-icon">
                           <a href="#" className="accept-request">
@@ -295,10 +295,10 @@ class Navbar extends Component {
 
                       <li className="accepted">
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar57-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge7.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          You and <a href="#" className="h6 notification-friend">Mary Jane Stark</a> just became friends. Write on <a href="#" className="notification-link">her wall</a>.
+                          Você e <a href="#" className="h6 notification-friend">Nome</a> escreva <a href="#" className="notification-link">sobre</a>.
               </div>
                         <span className="notification-icon">
                           <svg className="olymp-happy-face-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
@@ -315,8 +315,8 @@ class Navbar extends Component {
                           <img src="/assets/img/avatar58-sm.jpg" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">Stagg Clothing</a>
-                          <span className="chat-message-item">9 Friends in Common</span>
+                          <a href="#" className="h6 notification-friend">Nome</a>
+                          <span className="chat-message-item">9 amigos</span>
                         </div>
                         <span className="notification-icon">
                           <a href="#" className="accept-request">
@@ -341,7 +341,7 @@ class Navbar extends Component {
                     </ul>
                   </div>
 
-                  <a href="#" className="view-all bg-blue">Check all your Events</a>
+                  <a href="#" className="view-all bg-blue">Ver todos Eventos</a>
                 </div>
               </div>
 
@@ -351,20 +351,20 @@ class Navbar extends Component {
 
                 <div className="more-dropdown more-with-triangle triangle-top-center">
                   <div className="ui-block-title ui-block-title-small">
-                    <h6 className="title">Chat / Messages</h6>
-                    <a href="#">Mark all as read</a>
-                    <a href="#">Settings</a>
+                    <h6 className="title">Mensagens</h6>
+                    <a href="#">Marcar todas lidas</a>
+                    <a href="#">Configurações</a>
                   </div>
 
                   <div className="mCustomScrollbar" data-mcs-theme="dark">
                     <ul className="notification-list chat-message">
                       <li className="message-unread">
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar59-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge9.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">Diana Jameson</a>
-                          <span className="chat-message-item">Hi James! It’s Diana, I just wanted to let you know that we have to reschedule...</span>
+                          <a href="#" className="h6 notification-friend">Nome</a>
+                          <span className="chat-message-item">Texto...</span>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">4 hours ago</time></span>
                         </div>
                         <span className="notification-icon">
@@ -374,53 +374,51 @@ class Navbar extends Component {
                           <svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
                         </div>
                       </li>
-
-                      <li>
-                        <div className="author-thumb">
-                          <img src="/assets/img/avatar60-sm.jpg" alt="author" />
-                        </div>
-                        <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">Jake Parker</a>
-                          <span className="chat-message-item">Great, I’ll see you tomorrow!.</span>
-                          <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">4 hours ago</time></span>
-                        </div>
-                        <span className="notification-icon">
-                          <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                        </span>
-
-                        <div className="more">
-                          <svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="author-thumb">
-                          <img src="/assets/img/avatar61-sm.jpg" alt="author" />
-                        </div>
-                        <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">Elaine Dreyfuss</a>
-                          <span className="chat-message-item">We’ll have to check that at the office and see if the client is on board with...</span>
-                          <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">Yesterday at 9:56pm</time></span>
-                        </div>
-                        <span className="notification-icon">
-                          <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                        </span>
-                        <div className="more">
-                          <svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                        </div>
-                      </li>
-
                       <li className="chat-group">
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar11-sm.jpg" alt="author" />
-                          <img src="/assets/img/avatar12-sm.jpg" alt="author" />
-                          <img src="/assets/img/avatar13-sm.jpg" alt="author" />
-                          <img src="/assets/img/avatar10-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge14.png" alt="author" />
+                          <img src="/assets/img/badge10.png" alt="author" />
+                          <img src="/assets/img/badge11.png" alt="author" />
+                          <img src="/assets/img/badge12.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <a href="#" className="h6 notification-friend">You, Faye, Ed &amp; Jet +3</a>
-                          <span className="last-message-author">Ed:</span>
-                          <span className="chat-message-item">Yeah! Seems fine by me!</span>
+                          <a href="#" className="h6 notification-friend">Você, Nome, Nome2 &amp; Nome3 +3</a>
+                          <span className="last-message-author">Nome1: </span>
+                          <span className="chat-message-item">Texto!</span>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">March 16th at 10:23am</time></span>
+                        </div>
+                        <span className="notification-icon">
+                          <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                        </span>
+                        <div className="more">
+                          <svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="author-thumb">
+                          <img src="/assets/img/badge8.png" alt="author" />
+                        </div>
+                        <div className="notification-event">
+                          <a href="#" className="h6 notification-friend">Nome</a>
+                          <span className="chat-message-item">Texto!.</span>
+                          <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">4 hours ago</time></span>
+                        </div>
+                        <span className="notification-icon">
+                          <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                        </span>
+
+                        <div className="more">
+                          <svg className="olymp-three-dots-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="author-thumb">
+                          <img src="/assets/img/badge1.png" alt="author" />
+                        </div>
+                        <div className="notification-event">
+                          <a href="#" className="h6 notification-friend">Nome</a>
+                          <span className="chat-message-item">Texto...</span>
+                          <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">Yesterday at 9:56pm</time></span>
                         </div>
                         <span className="notification-icon">
                           <svg className="olymp-chat---messages-icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
@@ -432,7 +430,7 @@ class Navbar extends Component {
                     </ul>
                   </div>
 
-                  <a href="#" className="view-all bg-purple">View All Messages</a>
+                  <a href="#" className="view-all bg-purple">Ver Todas Mensagens</a>
                 </div>
               </div>
 
@@ -443,19 +441,19 @@ class Navbar extends Component {
 
                 <div className="more-dropdown more-with-triangle triangle-top-center">
                   <div className="ui-block-title ui-block-title-small">
-                    <h6 className="title">Notifications</h6>
-                    <a href="#">Mark all as read</a>
-                    <a href="#">Settings</a>
+                    <h6 className="title">Notificações</h6>
+                    <a href="#">Marcar todas como lidas</a>
+                    <a href="#">Configurações</a>
                   </div>
 
                   <div className="mCustomScrollbar" data-mcs-theme="dark">
                     <ul className="notification-list">
                       <li>
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar62-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge14.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <div><a href="#" className="h6 notification-friend">Mathilda Brinker</a> commented on your new <a href="#" className="notification-link">profile status</a>.</div>
+                          <div><a href="#" className="h6 notification-friend">Nome</a> comentou em sua <a href="#" className="notification-link">postagem</a>.</div>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">4 hours ago</time></span>
                         </div>
                         <span className="notification-icon">
@@ -470,10 +468,10 @@ class Navbar extends Component {
 
                       <li className="un-read">
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar63-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge3.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <div>You and <a href="#" className="h6 notification-friend">Nicholas Grissom</a> just became friends. Write on <a href="#" className="notification-link">his wall</a>.</div>
+                          <div>Você e <a href="#" className="h6 notification-friend">Nome</a> agora são amigos comente <a href="#" className="notification-link">sobre</a>.</div>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">9 hours ago</time></span>
                         </div>
                         <span className="notification-icon">
@@ -488,10 +486,10 @@ class Navbar extends Component {
 
                       <li className="with-comment-photo">
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar64-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge5.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <div><a href="#" className="h6 notification-friend">Sarah Hetfield</a> commented on your <a href="#" className="notification-link">photo</a>.</div>
+                          <div><a href="#" className="h6 notification-friend">Nome</a> comentou em sua <a href="#" className="notification-link">foto</a>.</div>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">Yesterday at 5:32am</time></span>
                         </div>
                         <span className="notification-icon">
@@ -500,7 +498,7 @@ class Navbar extends Component {
 
                         <div className="comment-photo">
                           <img src="/assets/img/comment-photo1.jpg" alt="photo" />
-                          <span>“She looks incredible in that outfit! We should see each...”</span>
+                          <span>“Texto...”</span>
                         </div>
 
                         <div className="more">
@@ -511,10 +509,10 @@ class Navbar extends Component {
 
                       <li>
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar65-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge10.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <div><a href="#" className="h6 notification-friend">Green Goo Rock</a> invited you to attend to his event Goo in <a href="#" className="notification-link">Gotham Bar</a>.</div>
+                          <div><a href="#" className="h6 notification-friend">Nome</a> convidou você ao <a href="#" className="notification-link">Lugar</a>.</div>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">March 5th at 6:43pm</time></span>
                         </div>
                         <span className="notification-icon">
@@ -529,10 +527,10 @@ class Navbar extends Component {
 
                       <li>
                         <div className="author-thumb">
-                          <img src="/assets/img/avatar66-sm.jpg" alt="author" />
+                          <img src="/assets/img/badge6.png" alt="author" />
                         </div>
                         <div className="notification-event">
-                          <div><a href="#" className="h6 notification-friend">James Summers</a> commented on your new <a href="#" className="notification-link">profile status</a>.</div>
+                          <div><a href="#" className="h6 notification-friend">Nome</a> comentou em sua <a href="#" className="notification-link">postagem</a>.</div>
                           <span className="notification-date"><time className="entry-date updated" dateTime="2004-07-24T18:18">March 2nd at 8:29pm</time></span>
                         </div>
                         <span className="notification-icon">
@@ -547,7 +545,7 @@ class Navbar extends Component {
                     </ul>
                   </div>
 
-                  <a href="#" className="view-all bg-primary">View All Notifications</a>
+                  <a href="#" className="view-all bg-primary">Ver Todas Notficações</a>
                 </div>
               </div>
 
@@ -606,9 +604,9 @@ class Navbar extends Component {
 
               <div className="mCustomScrollbar" data-mcs-theme="dark">
                 <div className="ui-block-title ui-block-title-small">
-                  <h6 className="title">FRIEND REQUESTS</h6>
+                  <h6 className="title">AMIGOS</h6>
                   <Link to="/profiles">Explorar</Link>
-                  <a href="#">Settings</a>
+                  <a href="#">Configurações</a>
                 </div>
                 <ul className="notification-list friend-requests">
                   <li>
@@ -928,8 +926,6 @@ class Navbar extends Component {
           </div>
 
         </header>
-
-        <div className="header-spacer"></div>
       </React.Fragment>
     )
 
