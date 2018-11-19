@@ -17,8 +17,11 @@ class CreateProfile extends Component {
       company: '',
       website: '',
       location: '',
+      gender: '',
       status: '',
       skills: '',
+      interests: '',
+      birthday: '',
       githubusername: '',
       bio: '',
       twitter: '',
@@ -48,7 +51,10 @@ class CreateProfile extends Component {
       website: this.state.website,
       location: this.state.location,
       status: this.state.status,
+      gender: this.state.gender,
+      interests: this.state.interests,
       skills: this.state.skills,
+      birthday: this.state.birthday,
       githubusername: this.state.githubusername,
       bio: this.state.bio,
       twitter: this.state.twitter,
@@ -252,7 +258,7 @@ class CreateProfile extends Component {
 
     return (
       <React.Fragment>
-
+				<div className="header-spacer"></div>
         <div className="container">
           <div className="row">
             <div className="col col-xl-9 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">
@@ -296,13 +302,14 @@ class CreateProfile extends Component {
                           error={errors.website}
                         />
 
-                        <div className="form-group date-time-picker label-floating">
-                          <label className="control-label">Data de Nascimento</label>
-                          <input name="datetimepicker"/>
-                          <span className="input-group-addon">
-                            <svg className="olymp-month-calendar-icon icon"><use xlinkHref="/assets/svg-icons/sprites/icons.svg#olymp-month-calendar-icon"></use></svg>
-                          </span>
-                        </div>
+                        	<TextFieldGroup
+													placeholder="Nascimento"
+													name="birthday"
+													type="date"
+													value={this.state.birthday}
+													onChange={this.onChange}
+													error={errors.birthday}
+												/>
                       </div>
 
                       <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
@@ -321,41 +328,27 @@ class CreateProfile extends Component {
                           onChange={this.onChange}
                           error={errors.githubusername}
                         />
+                        	<TextFieldGroup
+													placeholder="Interesses"
+													name="interests"
+													value={this.state.interests}
+													onChange={this.onChange}
+													error={errors.interests}
+												/>
 
-
-                        <div className="form-group label-floating is-empty">
-                          <label className="control-label">Seu Número</label>
-                          <input className="form-control" placeholder="" type="text" />
-                        </div>
                       </div>
 
-                      <div className="col col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div className="form-group label-floating is-select">
-                          <label className="control-label">Your Country</label>
-                          <select className="form-control">
-                            <option value="US">United States</option>
-                            <option value="AU">Australia</option>
-                          </select>
-                        </div>
+                      <div className="col col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <TextFieldGroup
+                          placeholder="Localização"
+                          name="location"
+                          value={this.state.location}
+                          onChange={this.onChange}
+                          error={errors.location}
+                        />
                       </div>
-                      <div className="col col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div className="form-group label-floating is-select">
-                          <label className="control-label">Your State / Province</label>
-                          <select className="form-control">
-                            <option value="CA">California</option>
-                            <option value="TE">Texas</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="col col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div className="form-group label-floating is-select">
-                          <label className="control-label">Your City</label>
-                          <select className="form-control">
-                            <option value="SF">San Francisco</option>
-                            <option value="NY">New York</option>
-                          </select>
-                        </div>
-                      </div>
+
                       <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
                         <TextAreaFieldGroup
                           placeholder="Biografia"
@@ -367,14 +360,19 @@ class CreateProfile extends Component {
                         />
                       </div>
                       <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div className="form-group label-floating is-select">
-                          <label className="control-label">Seu Genêro</label>
-                          <select className="form-control">
-                            <option value="OR">Outro</option>
-                            <option value="MA">Homem</option>
-                            <option value="FE">Mulher</option>
-                          </select>
-                        </div>
+                        <SelectListGroup
+                          placeholder="Sexo"
+                          name="gender"
+                          value={this.state.gender}
+                          onChange={this.onChange}
+                          options={[
+                            { label: 'Selecione', value: 0 },
+                            { label: 'M', value: 'M' },
+                            { label: 'F', value: 'F' },
+                            { label: 'Outro', value: 'Outro' },
+                          ]}
+                          error={errors.gender}
+                        />
                         <TextFieldGroup
                           placeholder="* Habilidades"
                           name="skills"
@@ -401,10 +399,10 @@ class CreateProfile extends Component {
                         {socialInputs}
                       </div>
                       <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
-                        <button className="btn btn-secondary btn-lg full-width">Restore all Attributes</button>
+                        <button className="btn btn-secondary btn-lg full-width">Restaurar</button>
                       </div>
                       <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
-                        <button type="submit" className="btn btn-primary btn-lg full-width">Save all Changes</button>
+                        <button type="submit" className="btn btn-primary btn-lg full-width">Criar Perfil</button>
                       </div>
 
                     </div>
@@ -446,7 +444,7 @@ class CreateProfile extends Component {
                     </div>
                   </div>
 
-  
+
                 </div>
 
 

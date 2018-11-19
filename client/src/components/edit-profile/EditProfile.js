@@ -293,7 +293,7 @@ class CreateProfile extends Component {
 														{ label: 'F', value: 'F' },
 														{ label: 'Outro', value: 'Outro' },
 													]}
-													error={errors.status}
+													error={errors.gender}
 												/>
 
 												<TextFieldGroup
