@@ -85,22 +85,22 @@ class Login extends Component {
                   <div className="checkbox">
                     <label>
                       <input name="optionsCheckboxes" type="checkbox" />
-                      Remember Me
+                      Lembrar
         </label>
                   </div>
-                  <a href="#" className="forgot">Forgot my Password</a>
+                  <a href="#" className="forgot">Esquecer minha Senha</a>
                 </div>
 
                 <input type="submit" className="btn btn-lg btn-primary full-width" />
 
                 <div className="or"></div>
 
-                <a href="#" className="btn btn-lg bg-facebook full-width btn-icon-left"><i className="fab fa-facebook-f" aria-hidden="true"></i>Login with Facebook</a>
+                <a href="#" className="btn btn-lg bg-facebook full-width btn-icon-left"><i className="fab fa-facebook-f" aria-hidden="true"></i>Logar com Facebook</a>
 
-                <a href="#" className="btn btn-lg bg-twitter full-width btn-icon-left"><i className="fab fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
+                <a href="#" className="btn btn-lg bg-twitter full-width btn-icon-left"><i className="fab fa-twitter" aria-hidden="true"></i>Logar com Twitter</a>
 
 
-                <p>Don’t you have an account? <a href="#">Register Now!</a> it’s really simple and you can start enjoing all the benefits!</p>
+                <p>Não tem uma conta? <a href="\register">Registre-se</a> Agora! é realmente muito simples começar uma conta!</p>
               </div>
             </div>
           </form>
