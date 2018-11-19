@@ -14,71 +14,71 @@ class SidebarRight extends Component {
                             <ul className="chat-users">
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar67-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge15.png" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar62-sm.jpg" className="avatar" />
-                                        <span className="icon-status online"></span>
-                                    </div>
-                                </li>
-
-                                <li className="inline-items js-chat-open">
-                                    <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar68-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge4.png" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
 
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar69-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge5.png" className="avatar" />
+                                        <span className="icon-status online"></span>
+                                    </div>
+                                </li>
+
+                                <li className="inline-items js-chat-open">
+                                    <div className="author-thumb">
+                                        <img alt="author" src="/assets/img/badge6.png" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
                                 </li>
 
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar70-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge7.png" className="avatar" />
                                         <span className="icon-status disconected"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar64-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge8.png" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar71-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge9.png" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar72-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge10.png" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar63-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge11.png" className="avatar" />
                                         <span className="icon-status status-invisible"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar72-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge12.png" className="avatar" />
                                         <span className="icon-status away"></span>
                                     </div>
                                 </li>
                                 <li className="inline-items js-chat-open">
 
                                     <div className="author-thumb">
-                                        <img alt="author" src="/assets/img/avatar71-sm.jpg" className="avatar" />
+                                        <img alt="author" src="/assets/img/badge13.png" className="avatar" />
                                         <span className="icon-status online"></span>
                                     </div>
                                 </li>

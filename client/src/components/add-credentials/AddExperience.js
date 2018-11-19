@@ -65,6 +65,7 @@ class AddExperience extends Component {
 
     return (
       <React.Fragment>
+        <div className="header-spacer"></div>
         <div class="container">
           <div class="row">
             <div class="col col-xl-9 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">

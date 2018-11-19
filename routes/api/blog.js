@@ -67,6 +67,8 @@ router.post(
         const newPost = new Blog({
             title: req.body.title,
             image: req.body.image,
+            category: typeof req.body.category !== 'undefined'?req.body.category.split(','):req.body.category,
+            tag: req.body.tag,
             text: req.body.text,
             name: req.body.name,
             avatar: req.body.avatar,

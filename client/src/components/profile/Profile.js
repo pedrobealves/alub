@@ -39,6 +39,7 @@ class Profile extends Component {
 
     return (
       <div className="profile">
+        <div className="header-spacer"></div>
         {profileContent}
       </div>
     );

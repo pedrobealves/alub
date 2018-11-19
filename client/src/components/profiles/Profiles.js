@@ -28,6 +28,7 @@ class Profiles extends Component {
 
     return (
       <div className="profiles">
+        <div className="header-spacer"></div>
         <div className="container">
           <div className="row">
             <div className="col-md-12">

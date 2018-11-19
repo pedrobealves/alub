@@ -31,7 +31,7 @@ class Dashboard extends Component {
         dashboardContent = (
           <div>
             <p className="lead">
-              Welcome <Link to={`/profile/${profile.handle}`} className="text-white">{user.name}</Link>
+              Bem-vindo <Link to={`/profile/${profile.handle}`} className="text-white">{user.name}</Link>
             </p>
             <ProfileActions />
             <Experience experience={profile.experience} />
@@ -61,18 +61,19 @@ class Dashboard extends Component {
 
     return (
       <div class="main-header">
-      <div class="content-bg-wrap bg-account"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-8 m-auto col-md-8 col-sm-12 col-12">
-            <div class="main-header-content">
-              <h1> Minha Conta</h1>
-              <p>{dashboardContent}</p>
+        <div className="header-spacer"></div>
+        <div class="content-bg-wrap bg-account"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-8 m-auto col-md-8 col-sm-12 col-12">
+              <div class="main-header-content">
+                <h1> Minha Conta</h1>
+                <p>{dashboardContent}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     );
   }
 }

@@ -221,12 +221,13 @@ class CreateProfile extends Component {
 
 		return (
 			<React.Fragment>
+				<div className="header-spacer"></div>
 				<div className="container">
 					<div className="row">
 						<div className="col col-xl-9 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">
 							<div className="ui-block">
 								<div className="ui-block-title">
-									<h6 className="title">Personal Information</h6>
+									<h6 className="title">Informações Pessoais</h6>
 								</div>
 								<div className="ui-block-content">
 									<form onSubmit={this.onSubmit}>
