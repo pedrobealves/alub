@@ -9,7 +9,8 @@
     "server": "nodemon server.js",
     "client": "yarn --cwd client start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn --cwd client start install && yarn --cwd client run build"
+    "test": "yarn --cwd client run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn --cwd client install && yarn --cwd client run build"
   },
   "author": "Pedro Bernardi",
   "license": "MIT",
