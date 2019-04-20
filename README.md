@@ -1,14 +1,14 @@
 
-<p align="center"><a href="https://github.com/PedroTreck/alub/" target="_blank"><img width="240"src="https://raw.githubusercontent.com/PedroTreck/alub/master/website/static/img/logo/logo-git.png"></a></p>
+<p align="center"><a href="https://github.com/trecky/alub/" target="_blank"><img width="240"src="https://raw.githubusercontent.com/trecky/alub/master/website/static/img/logo/logo-git.png"></a></p>
 
 <br>
 
 
 <p align="center">
-<a href=""><img src="https://img.shields.io/github/issues/PedroTreck/alub.svg?style=for-the-badge&colorA=gray&logo=github&colorB=7651A9&logoColor=F7F7F7&logoWidth=15"/></a>
+<a href=""><img src="https://img.shields.io/github/issues/trecky/alub.svg?style=for-the-badge&colorA=gray&logo=github&colorB=7651A9&logoColor=F7F7F7&logoWidth=15"/></a>
 <br>    
 <a href="#"><img src="https://img.shields.io/github/release-date/SubtitleEdit/subtitleedit.svg?style=for-the-badge&colorB=7651A9"></a>
-<a href=""><img src="https://img.shields.io/github/stars/PedroTreck/alub.svg?style=for-the-badge&colorB=7651A9"/></a>
+<a href=""><img src="https://img.shields.io/github/stars/trecky/alub.svg?style=for-the-badge&colorB=7651A9"/></a>
 <br>
 <a href=""><img src="https://img.shields.io/badge/license-MIT-353535.svg?style=for-the-badge"/></a>
 <a href="https://glacial-cove-39188.herokuapp.com/"><img src="https://img.shields.io/badge/heroku-homolog-353535.svg?style=for-the-badge&logo=heroku&colorA=gray&logoColor=F7F7F7&logoWidth=25"/></a>
